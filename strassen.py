@@ -45,10 +45,11 @@ def strassen(A, B):
     return C
 
 
-group_0 = matrix_pair.data[0]
+if __name__ == "__main__":
+    group_0 = matrix_pair.data[0]
 
-# results = [strassen(pair[0], pair[1]) for pair in group_0]
-# just for test, so use first for the smallest execution time
-results = strassen(group_0[0][0], group_0[0][1])
-res2 = np.matmul(group_0[0][0], group_0[0][1])
-print(results[:] == res2[:])
+    # results = [strassen(pair[0], pair[1]) for pair in group_0]
+    # just for test, so use first for the smallest execution time
+    results = strassen(group_0[0][0], group_0[0][1])
+    res2 = np.matmul(group_0[0][0], group_0[0][1])
+    print(results[:] == res2[:])
