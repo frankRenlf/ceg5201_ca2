@@ -17,7 +17,7 @@ def timing_decorator(func):
         result = func(*args, **kwargs)
         end_time = time.time()
         elapsed_time = end_time - start_time
-        print(f"{func.__name__} took {elapsed_time:.5f} seconds to execute.")
+        print(f"{func.__name__}, matricx shape {args[0].shape}, took {elapsed_time:.5f} seconds to execute.")
         return result
 
     return wrapper
