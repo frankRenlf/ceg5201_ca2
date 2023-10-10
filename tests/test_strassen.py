@@ -8,12 +8,11 @@
     @github : https://github.com/frankRenlf
     @Description : 
 """
-from multiprocessing import cpu_count
 
 import numpy as np
 
-from strassen.strassen import execute_strassen
-from strassen.strassen_multiprocessing import execute_strassen_multiprocessing
+from matricx_multiply_algorithms.strassen.strassen import execute_strassen
+from matricx_multiply_algorithms.strassen.strassen_multiprocessing import execute_strassen_multiprocessing
 from utils.generate_matrics import matrix_pair
 
 
