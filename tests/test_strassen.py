@@ -47,8 +47,8 @@ if __name__ == "__main__":
     # one_group(execute_strassen)
     # one_group(execute_strassen_multiprocessing)
     for index, group in enumerate(matrix_pair.data):
-        # print(f"Group {index}")
-        # one_group(index, group, execute_strassen)
+        # just test one group
+        one_group(index, group, execute_strassen)
         one_group(index, group, execute_strassen_multiprocessing)
         break
     # test1(0, execute_strassen_multiprocessing)
