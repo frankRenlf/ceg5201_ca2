@@ -1,3 +1,12 @@
+execute_strassen, matricx shape (16, 16), took 0.00117 seconds to execute.
+execute_strassen, matricx shape (32, 32), took 0.00752 seconds to execute.
+execute_strassen, matricx shape (64, 64), took 0.05182 seconds to execute.
+execute_strassen, matricx shape (128, 128), took 0.36282 seconds to execute.
+execute_strassen, matricx shape (256, 256), took 2.49681 seconds to execute.
+execute_strassen, matricx shape (512, 512), took 17.70236 seconds to execute.
+execute_strassen, matricx shape (1024, 1024), took 125.52324 seconds to execute.
+execute_strassen, matricx shape (2048, 2048), took 885.96578 seconds to execute.
+one_group, 0, took 1032.11205 seconds to execute.
 execute_strassen_multiprocessing, matricx shape (16, 16), took 1.29264 seconds to execute.
 execute_strassen_multiprocessing, matricx shape (32, 32), took 1.25353 seconds to execute.
 execute_strassen_multiprocessing, matricx shape (64, 64), took 1.22232 seconds to execute.
