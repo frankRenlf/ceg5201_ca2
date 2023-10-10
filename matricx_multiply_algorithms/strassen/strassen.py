@@ -13,7 +13,7 @@ from utils.generate_matrics import matrix_pair
 
 import numpy as np
 
-from utils.time_consume import timing_decorator
+from utils.time_consume import pair_timing_decorator
 
 
 def split_matrix(A):
@@ -47,7 +47,7 @@ def strassen(A, B):
     return C
 
 
-@timing_decorator
+@pair_timing_decorator
 def execute_strassen(A, B):
     return strassen(A, B)
 

@@ -10,7 +10,7 @@
 """
 
 import numpy as np
-from utils.time_consume import timing_decorator
+from utils.time_consume import pair_timing_decorator
 from multiprocessing import Pool, cpu_count
 import os
 
@@ -52,6 +52,6 @@ def strassen_multiprocessing(A, B, depth=0, max_depth=1):
     return C
 
 
-@timing_decorator
+@pair_timing_decorator
 def execute_strassen_multiprocessing(A, B):
     return strassen_multiprocessing(A, B)
