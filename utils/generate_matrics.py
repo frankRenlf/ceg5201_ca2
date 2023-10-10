@@ -4,7 +4,7 @@
     @Project : ceg5201_ca2 
     @Product : PyCharm
     @createTime : 2023/10/10 15:48 
-    @Email : sc19lr@leeds.ac.uk
+    @Email : e1143935@u.nus.edu
     @github : https://github.com/frankRenlf
     @Description : 
 """
