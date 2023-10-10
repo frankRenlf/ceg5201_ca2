@@ -10,9 +10,8 @@
 """
 
 import numpy as np
-from multiprocessing import Process, Pipe
-
 from utils.time_consume import timing_decorator
+from multiprocessing import Pool, cpu_count
 
 
 def split_matrix(A):
@@ -21,35 +20,27 @@ def split_matrix(A):
     return A[:row2, :col2], A[:row2, col2:], A[row2:, :col2], A[row2:, col2:]
 
 
-def parallel_strassen(conn, A, B):
-    conn.send(strassen(A, B))
-    conn.close()
+def parallel_strassen(args):
+    return strassen_multiprocessing(args[0], args[1], args[2])
 
 
-def strassen(A, B):
-    if max(A.shape[0], A.shape[1], B.shape[0], B.shape[1]) <= 2:
-        return np.dot(A, B)
+def strassen_multiprocessing(A, B, depth=0, max_depth=1):
+    if A.shape[0] <= 2 or B.shape[0] <= 2:
+        return np.matmul(A, B)
 
     A11, A12, A21, A22 = split_matrix(A)
     B11, B12, B21, B22 = split_matrix(B)
 
-    processes = []
-    pipes = []
+    args = [[A11 + A22, B11 + B22], [A21 + A22, B11], [A11, B12 - B22],
+            [A22, B21 - B11], [A11 + A12, B22], [A21 - A11, B11 + B12],
+            [A12 - A22, B21 + B22]]
 
-    # 使用multiprocessing进行子矩阵乘法
-    for sub_A, sub_B in [(A11 + A22, B11 + B22), (A21 + A22, B11), (A11, B12 - B22),
-                         (A22, B21 - B11), (A11 + A12, B22), (A21 - A11, B11 + B12),
-                         (A12 - A22, B21 + B22)]:
-        parent_conn, child_conn = Pipe()
-        pipes.append(parent_conn)
-        process = Process(target=parallel_strassen, args=(child_conn, sub_A, sub_B))
-        processes.append(process)
-        process.start()
-
-    M = [pipe.recv() for pipe in pipes]
-
-    for process in processes:
-        process.join()
+    if depth < max_depth:
+        with Pool(processes=cpu_count()) as pool:
+            args_a = [el + [depth + 1] for el in args]
+            M = pool.map(parallel_strassen, args_a)
+    else:
+        M = [strassen_multiprocessing(a[0], a[1], depth + 1, max_depth) for a in args]
 
     C11 = M[0] + M[3] - M[4] + M[6]
     C12 = M[2] + M[4]
@@ -62,4 +53,4 @@ def strassen(A, B):
 
 @timing_decorator
 def execute_strassen_multiprocessing(A, B):
-    return strassen(A, B)
+    return strassen_multiprocessing(A, B)

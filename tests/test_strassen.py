@@ -19,8 +19,15 @@ if __name__ == "__main__":
 
     # results = [strassen(pair[0], pair[1]) for pair in group_0]
     # just for test, so use first for the smallest execution time
-    result1 = execute_strassen(group_0[0][0], group_0[0][1])
-    result2 = execute_strassen_multiprocessing(group_0[0][0], group_0[0][1])
+    # res = []
+    # for pair in group_0:
+    #     result1 = execute_strassen(pair[0], pair[1])
+    #     res.append(result1)
+    i = 5
+    tmp = (group_0[i][0], group_0[i][1])
+    result1 = execute_strassen(*tmp)
+    result2 = execute_strassen_multiprocessing(*tmp)
+    res2 = np.matmul(group_0[0][0], group_0[0][1])
+    # print(result2[:] == res2[:])
 
-    # res2 = np.matmul(group_0[0][0], group_0[0][1])
     # print(results[:] == res2[:])
