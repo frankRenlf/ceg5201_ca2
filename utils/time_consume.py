@@ -33,3 +33,15 @@ def group_timing_decorator(func):
         return result
 
     return wrapper
+
+
+def total_timing_decorator(func):
+    def wrapper(*args, **kwargs):
+        start_time = time.time()
+        result = func(*args, **kwargs)
+        end_time = time.time()
+        elapsed_time = end_time - start_time
+        print(f"{func.__name__}, total groups, took {elapsed_time:.5f} seconds to execute.")
+        return result
+
+    return wrapper

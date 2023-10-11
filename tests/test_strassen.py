@@ -14,7 +14,7 @@ import numpy as np
 from matricx_multiply_algorithms.strassen.strassen import execute_strassen
 from matricx_multiply_algorithms.strassen.strassen_multiprocessing import execute_strassen_multiprocessing
 from utils.generate_matrics import matrix_pair
-from utils.time_consume import pair_timing_decorator, group_timing_decorator
+from utils.time_consume import pair_timing_decorator, group_timing_decorator, total_timing_decorator
 
 
 def one_pair():
@@ -37,18 +37,22 @@ def one_group(group_id, group_, func):
     # res.append(result1)
 
 
+@total_timing_decorator
+def total_groups(data, func):
+    for index, group in enumerate(data):
+        # just test one group
+        one_group(index, group, func)
+        break
+
+
 if __name__ == "__main__":
     # group_0 = matrix_pair.data[0]
-
     # results = [strassen(pair[0], pair[1]) for pair in group_0]
     # just for test, so use first for the smallest execution time
     # res = []
     # one_pair()
     # one_group(execute_strassen)
     # one_group(execute_strassen_multiprocessing)
-    for index, group in enumerate(matrix_pair.data):
-        # just test one group
-        one_group(index, group, execute_strassen)
-        one_group(index, group, execute_strassen_multiprocessing)
-        break
+    total_groups(matrix_pair.data, execute_strassen)
+    total_groups(matrix_pair.data, execute_strassen_multiprocessing)
     # test1(0, execute_strassen_multiprocessing)
