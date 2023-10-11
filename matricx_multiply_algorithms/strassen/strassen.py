@@ -23,6 +23,7 @@ def split_matrix(A):
 
 
 def strassen(A, B):
+    # for small matrix, use numpy.matmul, which is equal to sequential matrix multiplication
     if A.shape[0] <= 2 or B.shape[0] <= 2:
         return np.matmul(A, B)
 
@@ -50,6 +51,3 @@ def strassen(A, B):
 @pair_timing_decorator
 def execute_strassen(A, B):
     return strassen(A, B)
-
-
-
