@@ -38,4 +38,6 @@ if __name__ == "__main__":
     # just for test, so use first for the smallest execution time
     # res = []
     # test1(0, execute_strassen_multiprocessing)
-    group_test()
+    # group_test()
+    pair_test()
+

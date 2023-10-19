@@ -27,9 +27,10 @@ def parallel_strassen(args):
 
 def strassen_multiprocessing(A, B, depth=0, max_depth=1):
     # for small matrix, use numpy.matmul, which is equal to sequential matrix multiplication
-    if A.shape[0] <= 2 or B.shape[0] <= 2:
-        return np.matmul(A, B)
-
+    # if A.shape[0] <= 2 or B.shape[0] <= 2:
+    #     return np.matmul(A, B)
+    if A.shape[0] < 2 or B.shape[0] < 2:
+        return A * B
     A11, A12, A21, A22 = split_matrix(A)
     B11, B12, B21, B22 = split_matrix(B)
 
