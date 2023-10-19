@@ -39,6 +39,7 @@ def strassen_multiprocessing(A, B, depth=0, max_depth=1):
             [A12 - A22, B21 + B22]]
 
     if depth < max_depth:
+        # cpu_count() will return 12 in my computer, but subtasks will be 7, so it only open 7 processes
         with Pool(processes=cpu_count()) as pool:
             args_a = [el + [depth + 1] for el in args]
             M = pool.map(parallel_strassen, args_a)
