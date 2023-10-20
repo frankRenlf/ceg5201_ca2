@@ -6,45 +6,33 @@
     @createTime : 2023/10/10 16:03 
     @Email : e1143935@u.nus.edu
     @github : https://github.com/frankRenlf
-    @Description : 
+    @Description : sequential strassen algorithm
 """
-
-from utils.generate_matrics import matrix_pair
 
 import numpy as np
 
 from utils.time_consume import pair_timing_decorator
-
-
-def split_matrix(A):
-    row, col = A.shape
-    row2, col2 = row // 2, col // 2
-    return A[:row2, :col2], A[:row2, col2:], A[row2:, :col2], A[row2:, col2:]
+from utils.matrix_operations import split_matrix
 
 
 def strassen(A, B):
-    # for small matrix, use numpy.matmul, which is equal to sequential matrix multiplication
     if A.shape[0] < 2 or B.shape[0] < 2:
         return A * B
-
     A11, A12, A21, A22 = split_matrix(A)
     B11, B12, B21, B22 = split_matrix(B)
 
-    M1 = strassen(A11 + A22, B11 + B22)
-    M2 = strassen(A21 + A22, B11)
-    M3 = strassen(A11, B12 - B22)
-    M4 = strassen(A22, B21 - B11)
-    M5 = strassen(A11 + A12, B22)
-    M6 = strassen(A21 - A11, B11 + B12)
-    M7 = strassen(A12 - A22, B21 + B22)
+    args = [[A11 + A21, B11 + B12], [A12 + A22, B21 + B22], [A11 - A22, B11 + B22],
+            [A11, B12 - B22], [A21 + A22, B11], [A11 + A12, B22],
+            [A22, B21 - B11]]
 
-    C11 = M1 + M4 - M5 + M7
-    C12 = M3 + M5
-    C21 = M2 + M4
-    C22 = M1 - M2 + M3 + M6
+    M = [strassen(a[0], a[1]) for a in args]
+
+    C11 = M[1] + M[2] - M[5] - M[6]
+    C12 = M[3] + M[5]
+    C21 = M[4] + M[6]
+    C22 = M[0] - M[2] - M[3] - M[4]
 
     C = np.vstack((np.hstack((C11, C12)), np.hstack((C21, C22))))
-
     return C
 
 

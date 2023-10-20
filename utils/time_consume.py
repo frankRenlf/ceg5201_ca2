@@ -6,7 +6,7 @@
     @createTime : 2023/10/10 16:34 
     @Email : e1143935@u.nus.edu
     @github : https://github.com/frankRenlf
-    @Description : 
+    @Description : time consume decorators
 """
 import time
 

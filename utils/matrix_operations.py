@@ -6,10 +6,16 @@
     @createTime : 2023/10/10 15:48 
     @Email : e1143935@u.nus.edu
     @github : https://github.com/frankRenlf
-    @Description : generate matrix
+    @Description : matrix operations, generate and split
 """
 
 import numpy as np
+
+
+def split_matrix(A):
+    row, col = A.shape
+    row2, col2 = row // 2, col // 2
+    return A[:row2, :col2], A[:row2, col2:], A[row2:, :col2], A[row2:, col2:]
 
 
 class MatrixPair:

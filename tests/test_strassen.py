@@ -6,7 +6,7 @@
     @createTime : 2023/10/10 16:37 
     @Email : e1143935@u.nus.edu
     @github : https://github.com/frankRenlf
-    @Description : 
+    @Description : test for strassen by using default_test.py
 """
 
 import numpy as np
@@ -14,7 +14,7 @@ import numpy as np
 from matricx_multiply_algorithms.strassen.strassen import execute_strassen
 from matricx_multiply_algorithms.strassen.strassen_multiprocessing import execute_strassen_multiprocessing
 from default_test import one_pair, one_group, total_groups
-from utils.generate_matrics import matrix_pair
+from utils.matrix_operations import matrix_pair
 
 
 def pair_test():
@@ -27,9 +27,9 @@ def group_test():
     one_group(0, matrix_pair.data[0], execute_strassen_multiprocessing)
 
 
-def total_groups_test():
-    total_groups(matrix_pair.data, execute_strassen)
-    total_groups(matrix_pair.data, execute_strassen_multiprocessing)
+def total_groups_test(data):
+    total_groups(data, execute_strassen)
+    total_groups(data, execute_strassen_multiprocessing)
 
 
 if __name__ == "__main__":
