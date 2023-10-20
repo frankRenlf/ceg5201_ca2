@@ -36,6 +36,6 @@ class MatrixPair:
         return matrix_pairs
 
 
+# data shape is : NUM_GROUPS*len(M)*2
 matrix_pair = MatrixPair()
-# NUM_GROUPS*len(M)*2
 # print(matrix_pair.data[0][7][1].shape)
