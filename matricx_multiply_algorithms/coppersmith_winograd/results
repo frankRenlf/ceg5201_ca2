@@ -1,0 +1,188 @@
+C:\Users\12481\anaconda3\envs\py\python.exe C:\Users\12481\ceg5201_ca2\tests\test_coppersmith_winograd.py
+execute_coppersmith_winograd, matricx shape (16, 16), took 0.01595 seconds to execute.
+execute_coppersmith_winograd, matricx shape (32, 32), took 0.11370 seconds to execute.
+execute_coppersmith_winograd, matricx shape (64, 64), took 0.74903 seconds to execute.
+execute_coppersmith_winograd, matricx shape (128, 128), took 4.42517 seconds to execute.
+execute_coppersmith_winograd, matricx shape (256, 256), took 30.63950 seconds to execute.
+execute_coppersmith_winograd, matricx shape (512, 512), took 201.07612 seconds to execute.
+execute_coppersmith_winograd, matricx shape (1024, 1024), took 1499.11807 seconds to execute.
+execute_coppersmith_winograd, matricx shape (2048, 2048), took 10409.64788 seconds to execute.
+one_group, 0, took 12145.78641 seconds to execute.
+execute_coppersmith_winograd, matricx shape (16, 16), took 0.01197 seconds to execute.
+execute_coppersmith_winograd, matricx shape (32, 32), took 0.08278 seconds to execute.
+execute_coppersmith_winograd, matricx shape (64, 64), took 0.57247 seconds to execute.
+execute_coppersmith_winograd, matricx shape (128, 128), took 4.04518 seconds to execute.
+execute_coppersmith_winograd, matricx shape (256, 256), took 28.02060 seconds to execute.
+execute_coppersmith_winograd, matricx shape (512, 512), took 197.57956 seconds to execute.
+execute_coppersmith_winograd, matricx shape (1024, 1024), took 1383.70048 seconds to execute.
+execute_coppersmith_winograd, matricx shape (2048, 2048), took 9714.20845 seconds to execute.
+one_group, 1, took 11328.22449 seconds to execute.
+execute_coppersmith_winograd, matricx shape (16, 16), took 0.01094 seconds to execute.
+execute_coppersmith_winograd, matricx shape (32, 32), took 0.08182 seconds to execute.
+execute_coppersmith_winograd, matricx shape (64, 64), took 0.58045 seconds to execute.
+execute_coppersmith_winograd, matricx shape (128, 128), took 4.02821 seconds to execute.
+execute_coppersmith_winograd, matricx shape (256, 256), took 28.28589 seconds to execute.
+execute_coppersmith_winograd, matricx shape (512, 512), took 199.66537 seconds to execute.
+execute_coppersmith_winograd, matricx shape (1024, 1024), took 1384.24631 seconds to execute.
+execute_coppersmith_winograd, matricx shape (2048, 2048), took 10071.60651 seconds to execute.
+one_group, 2, took 11688.50648 seconds to execute.
+execute_coppersmith_winograd, matricx shape (16, 16), took 0.01202 seconds to execute.
+execute_coppersmith_winograd, matricx shape (32, 32), took 0.08176 seconds to execute.
+execute_coppersmith_winograd, matricx shape (64, 64), took 0.57243 seconds to execute.
+execute_coppersmith_winograd, matricx shape (128, 128), took 4.08085 seconds to execute.
+execute_coppersmith_winograd, matricx shape (256, 256), took 28.65928 seconds to execute.
+execute_coppersmith_winograd, matricx shape (512, 512), took 201.66041 seconds to execute.
+execute_coppersmith_winograd, matricx shape (1024, 1024), took 1407.93637 seconds to execute.
+execute_coppersmith_winograd, matricx shape (2048, 2048), took 10169.53071 seconds to execute.
+one_group, 3, took 11812.53586 seconds to execute.
+execute_coppersmith_winograd, matricx shape (16, 16), took 0.01212 seconds to execute.
+execute_coppersmith_winograd, matricx shape (32, 32), took 0.08677 seconds to execute.
+execute_coppersmith_winograd, matricx shape (64, 64), took 0.61133 seconds to execute.
+execute_coppersmith_winograd, matricx shape (128, 128), took 4.27376 seconds to execute.
+execute_coppersmith_winograd, matricx shape (256, 256), took 29.42071 seconds to execute.
+execute_coppersmith_winograd, matricx shape (512, 512), took 202.46113 seconds to execute.
+execute_coppersmith_winograd, matricx shape (1024, 1024), took 1424.95204 seconds to execute.
+execute_coppersmith_winograd, matricx shape (2048, 2048), took 10147.21452 seconds to execute.
+one_group, 4, took 11809.03438 seconds to execute.
+execute_coppersmith_winograd, matricx shape (16, 16), took 0.01209 seconds to execute.
+execute_coppersmith_winograd, matricx shape (32, 32), took 0.08519 seconds to execute.
+execute_coppersmith_winograd, matricx shape (64, 64), took 0.60043 seconds to execute.
+execute_coppersmith_winograd, matricx shape (128, 128), took 4.41094 seconds to execute.
+execute_coppersmith_winograd, matricx shape (256, 256), took 33.63537 seconds to execute.
+execute_coppersmith_winograd, matricx shape (512, 512), took 223.68551 seconds to execute.
+execute_coppersmith_winograd, matricx shape (1024, 1024), took 1415.54131 seconds to execute.
+execute_coppersmith_winograd, matricx shape (2048, 2048), took 9916.36135 seconds to execute.
+one_group, 5, took 11594.33319 seconds to execute.
+execute_coppersmith_winograd, matricx shape (16, 16), took 0.01097 seconds to execute.
+execute_coppersmith_winograd, matricx shape (32, 32), took 0.08078 seconds to execute.
+execute_coppersmith_winograd, matricx shape (64, 64), took 0.57646 seconds to execute.
+execute_coppersmith_winograd, matricx shape (128, 128), took 4.08061 seconds to execute.
+execute_coppersmith_winograd, matricx shape (256, 256), took 28.61476 seconds to execute.
+execute_coppersmith_winograd, matricx shape (512, 512), took 201.43908 seconds to execute.
+execute_coppersmith_winograd, matricx shape (1024, 1024), took 1404.94489 seconds to execute.
+execute_coppersmith_winograd, matricx shape (2048, 2048), took 10727.99002 seconds to execute.
+one_group, 6, took 12367.73956 seconds to execute.
+execute_coppersmith_winograd, matricx shape (16, 16), took 0.01197 seconds to execute.
+execute_coppersmith_winograd, matricx shape (32, 32), took 0.08078 seconds to execute.
+execute_coppersmith_winograd, matricx shape (64, 64), took 0.62131 seconds to execute.
+execute_coppersmith_winograd, matricx shape (128, 128), took 4.49785 seconds to execute.
+execute_coppersmith_winograd, matricx shape (256, 256), took 30.95798 seconds to execute.
+execute_coppersmith_winograd, matricx shape (512, 512), took 229.50737 seconds to execute.
+execute_coppersmith_winograd, matricx shape (1024, 1024), took 1528.25857 seconds to execute.
+execute_coppersmith_winograd, matricx shape (2048, 2048), took 9582.16245 seconds to execute.
+one_group, 7, took 11376.09927 seconds to execute.
+execute_coppersmith_winograd, matricx shape (16, 16), took 0.01302 seconds to execute.
+execute_coppersmith_winograd, matricx shape (32, 32), took 0.08272 seconds to execute.
+execute_coppersmith_winograd, matricx shape (64, 64), took 0.58344 seconds to execute.
+execute_coppersmith_winograd, matricx shape (128, 128), took 4.01430 seconds to execute.
+execute_coppersmith_winograd, matricx shape (256, 256), took 28.03774 seconds to execute.
+execute_coppersmith_winograd, matricx shape (512, 512), took 195.78198 seconds to execute.
+execute_coppersmith_winograd, matricx shape (1024, 1024), took 1371.98855 seconds to execute.
+execute_coppersmith_winograd, matricx shape (2048, 2048), took 9635.51929 seconds to execute.
+one_group, 8, took 11236.02304 seconds to execute.
+execute_coppersmith_winograd, matricx shape (16, 16), took 0.01096 seconds to execute.
+execute_coppersmith_winograd, matricx shape (32, 32), took 0.08675 seconds to execute.
+execute_coppersmith_winograd, matricx shape (64, 64), took 0.58045 seconds to execute.
+execute_coppersmith_winograd, matricx shape (128, 128), took 4.26660 seconds to execute.
+execute_coppersmith_winograd, matricx shape (256, 256), took 28.06792 seconds to execute.
+execute_coppersmith_winograd, matricx shape (512, 512), took 196.79361 seconds to execute.
+execute_coppersmith_winograd, matricx shape (1024, 1024), took 1370.66639 seconds to execute.
+execute_coppersmith_winograd, matricx shape (2048, 2048), took 9615.93052 seconds to execute.
+one_group, 9, took 11216.40619 seconds to execute.
+total_groups, took 116574.68885 seconds to execute.
+
+
+execute_coppersmith_winograd_multiprocessing, matricx shape (16, 16), took 3.09262 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (32, 32), took 3.12864 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (64, 64), took 3.42384 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (128, 128), took 4.55139 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (256, 256), took 12.38205 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (512, 512), took 69.36375 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (1024, 1024), took 481.22032 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (2048, 2048), took 3356.67773 seconds to execute.
+one_group, 0, took 3933.84134 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (16, 16), took 3.29020 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (32, 32), took 3.44479 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (64, 64), took 3.67517 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (128, 128), took 5.01345 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (256, 256), took 13.52999 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (512, 512), took 72.07978 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (1024, 1024), took 510.45120 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (2048, 2048), took 3430.30425 seconds to execute.
+one_group, 1, took 4041.79083 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (16, 16), took 3.17651 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (32, 32), took 3.34605 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (64, 64), took 3.60636 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (128, 128), took 4.94677 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (256, 256), took 13.30428 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (512, 512), took 73.68698 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (1024, 1024), took 503.45590 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (2048, 2048), took 3828.21514 seconds to execute.
+one_group, 2, took 4433.73899 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (16, 16), took 3.40589 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (32, 32), took 3.62132 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (64, 64), took 3.89957 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (128, 128), took 5.22004 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (256, 256), took 14.25489 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (512, 512), took 74.89628 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (1024, 1024), took 500.53671 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (2048, 2048), took 3473.94547 seconds to execute.
+one_group, 3, took 4079.78317 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (16, 16), took 3.31414 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (32, 32), took 3.53754 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (64, 64), took 3.80582 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (128, 128), took 5.05396 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (256, 256), took 13.31821 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (512, 512), took 73.49446 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (1024, 1024), took 494.67139 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (2048, 2048), took 3449.26302 seconds to execute.
+one_group, 4, took 4046.45854 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (16, 16), took 3.22039 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (32, 32), took 3.40988 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (64, 64), took 3.70509 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (128, 128), took 4.97169 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (256, 256), took 13.58169 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (512, 512), took 74.08894 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (1024, 1024), took 510.67848 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (2048, 2048), took 3568.14304 seconds to execute.
+one_group, 5, took 4181.80219 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (16, 16), took 3.37398 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (32, 32), took 3.60436 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (64, 64), took 3.80483 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (128, 128), took 5.27888 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (256, 256), took 14.01313 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (512, 512), took 77.37348 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (1024, 1024), took 505.32390 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (2048, 2048), took 3805.88019 seconds to execute.
+one_group, 6, took 4418.65475 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (16, 16), took 3.56647 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (32, 32), took 3.65024 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (64, 64), took 3.90556 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (128, 128), took 5.38759 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (256, 256), took 14.06278 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (512, 512), took 75.82527 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (1024, 1024), took 509.25940 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (2048, 2048), took 3487.35878 seconds to execute.
+one_group, 7, took 4103.01709 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (16, 16), took 3.28422 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (32, 32), took 3.49366 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (64, 64), took 3.76892 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (128, 128), took 4.89899 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (256, 256), took 13.24414 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (512, 512), took 74.40905 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (1024, 1024), took 502.86846 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (2048, 2048), took 3471.37817 seconds to execute.
+one_group, 8, took 4077.34761 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (16, 16), took 3.14060 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (32, 32), took 3.37398 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (64, 64), took 3.55649 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (128, 128), took 4.77523 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (256, 256), took 13.14089 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (512, 512), took 75.80571 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (1024, 1024), took 497.03407 seconds to execute.
+execute_coppersmith_winograd_multiprocessing, matricx shape (2048, 2048), took 3397.50901 seconds to execute.
+one_group, 9, took 3998.33598 seconds to execute.
+total_groups, took 41314.77049 seconds to execute.
+finish
+
+Process finished with exit code 0

@@ -11,7 +11,7 @@
 
 import numpy as np
 
-from matricx_multiply_algorithms.strassen.strassen import execute_strassen
+from matricx_multiply_algorithms.strassen.strassen import execute_strassen, strassen
 from matricx_multiply_algorithms.strassen.strassen_multiprocessing import execute_strassen_multiprocessing
 from default_test import one_pair, one_group, total_groups
 from utils.matrix_operations import matrix_pair
@@ -33,11 +33,11 @@ def total_groups_test(data):
 
 
 if __name__ == "__main__":
-    # group_0 = matrix_pair.data[0]
-    # results = [strassen(pair[0], pair[1]) for pair in group_0]
+    group_0 = matrix_pair.data[0]
+    results = [strassen(pair[0], pair[1]) for pair in group_0]
     # just for test, so use first for the smallest execution time
     # res = []
     # test1(0, execute_strassen_multiprocessing)
     # group_test()
-    pair_test()
+    pair_test(matrix_pair.data)
 
