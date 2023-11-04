@@ -1,10 +1,10 @@
 # -*- coding: UTF-8 -*-
 """
-    @Author : Frank.Ren
+    @Author : Frank.Ren, Jiajun.Feng
     @Project : ceg5201_ca2 
     @Product : PyCharm
     @createTime : 2023/10/10 15:48 
-    @Email : e1143935@u.nus.edu
+    @Email : e1143935@u.nus.edu, e1143293@u.nus.edu
     @github : https://github.com/frankRenlf
     @Description : matrix operations, generate and split
 """
@@ -17,6 +17,29 @@ def split_matrix(A):
     row2, col2 = row // 2, col // 2
     return A[:row2, :col2], A[:row2, col2:], A[row2:, :col2], A[row2:, col2:]
 
+def split_matrix_4(A):
+    row, col = A.shape
+    per_row, per_col = row // 4, col // 4
+    A11 = A[per_row * 0: per_row * 1, per_col * 0: per_col * 1]
+    A12 = A[per_row * 0: per_row * 1, per_col * 1: per_col * 2]
+    A13 = A[per_row * 0: per_row * 1, per_col * 2: per_col * 3]
+    A14 = A[per_row * 0: per_row * 1, per_col * 3: per_col * 4]
+
+    A21 = A[per_row * 1: per_row * 2, per_col * 0: per_col * 1]
+    A22 = A[per_row * 1: per_row * 2, per_col * 1: per_col * 2]
+    A23 = A[per_row * 1: per_row * 2, per_col * 2: per_col * 3]
+    A24 = A[per_row * 1: per_row * 2, per_col * 3: per_col * 4]
+
+    A31 = A[per_row * 2: per_row * 3, per_col * 0: per_col * 1]
+    A32 = A[per_row * 2: per_row * 3, per_col * 1: per_col * 2]
+    A33 = A[per_row * 2: per_row * 3, per_col * 2: per_col * 3]
+    A34 = A[per_row * 2: per_row * 3, per_col * 3: per_col * 4]
+
+    A41 = A[per_row * 3: per_row * 4, per_col * 0: per_col * 1]
+    A42 = A[per_row * 3: per_row * 4, per_col * 1: per_col * 2]
+    A43 = A[per_row * 3: per_row * 4, per_col * 2: per_col * 3]
+    A44 = A[per_row * 3: per_row * 4, per_col * 3: per_col * 4]
+    return A11, A12, A13, A14, A21, A22, A23, A24, A31, A32, A33, A34, A41, A42, A43, A44
 
 class MatrixPair:
 
