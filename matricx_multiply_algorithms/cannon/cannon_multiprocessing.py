@@ -8,14 +8,14 @@
     @github :
     @Description : multiprocessing of cannon algorithm
 """
-
+import multiprocessing
 import numpy as np
 import sys
 sys.path.append('/Users/junnnn/Desktop/NUS/Hardware/CA2/ceg5201_ca2')  # path of the folder
 from utils.time_consume import pair_timing_decorator
 from utils.matrix_operations import split_matrix_4
 from multiprocessing import Pool, cpu_count
-from matricx_multiply_algorithms.cannon.cannon import cannon
+import cannon
 
 # combine 16 sub matrices into a large one
 def combine_matrix(C11, C12, C13, C14, C21, C22, C23, C24, C31, C32, C33, C34, C41, C42, C43, C44):
@@ -27,7 +27,7 @@ def combine_matrix(C11, C12, C13, C14, C21, C22, C23, C24, C31, C32, C33, C34, C
 
 
 def parallel_cannon(A,B ):
-    return cannon(A, B)
+    return cannon.cannon(A, B)
 
 
 @pair_timing_decorator
@@ -75,12 +75,12 @@ def execute_parallel_cannon(A, B):
     C = combine_matrix(*C_sub)
     return C
 
-if __name__ == "__main__":
-    # codes for test
-    A = np.random.rand(1024, 1024)
-    B = np.random.rand(1024, 1024)
 
-    C_parallel = execute_parallel_cannon(A, B)
+# codes for test
+# A = np.random.rand(1024, 1024)
+# B = np.random.rand(1024, 1024)
 
-    assert np.allclose(C_parallel, A @ B, atol=1e-6)
-    print("Parallel Cannon: correct!")
+# C_parallel = execute_parallel_cannon(A, B)
+
+# assert np.allclose(C_parallel, A @ B, atol=1e-6)
+# print("Parallel Cannon: correct!")

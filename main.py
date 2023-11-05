@@ -10,11 +10,14 @@
 """
 from utils.matrix_operations import matrix_pair
 from tests import test_strassen
+from tests import test_coppersmith_winograd
 
 
 def run_all():
     # run strassen
     test_strassen.total_groups_test(matrix_pair.data)
+    # run coppersmith_winograd
+    test_coppersmith_winograd.total_groups_test_coppersmith_winograd(matrix_pair.data)
     # run others....
 
 
