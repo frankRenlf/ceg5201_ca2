@@ -56,10 +56,11 @@ def cannon(A, B):
 def execute_cannon(A, B):
     return cannon(A, B)
 
-# code for test
-# A = np.random.rand(1024, 1024)
-# B = np.random.rand(1024, 1024)
-# C = execute_cannon(A, B)
+if __name__ == "__main__":
+    # code for test
+    A = np.random.rand(1024, 1024)
+    B = np.random.rand(1024, 1024)
+    C = execute_cannon(A, B)
 
-# assert np.allclose(C, A @ B)
-# print("Cannon Output: Corret")
+    assert np.allclose(C, A @ B)
+    print("Cannon Output: Corret")
