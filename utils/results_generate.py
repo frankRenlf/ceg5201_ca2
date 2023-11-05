@@ -12,7 +12,7 @@
 import sys
 
 
-def print_to_file(func, file_name='output.txt'):
+def save_to_file(func, file_name='output.txt'):
     original_stdout = sys.stdout
 
     with open(file_name, 'a') as f:
@@ -25,4 +25,4 @@ def print_to_file(func, file_name='output.txt'):
 
 
 if __name__ == "__main__":
-    print_to_file("hello world")
+    save_to_file("hello world")
