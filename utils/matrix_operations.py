@@ -45,6 +45,8 @@ class MatrixPair:
 
     def __init__(self):
         M = [16, 32, 64, 128, 256, 512, 1024, 2048]
+
+        # M = [16, 32, 64, 128]
         NUM_PAIRS = 1
         NUM_GROUPS = 10
         self.data = [self.generate_matrix_pairs(M, NUM_PAIRS) for _ in range(NUM_GROUPS)]
