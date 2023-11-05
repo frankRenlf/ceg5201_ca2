@@ -8,13 +8,13 @@
     @github :
     @Description : multiprocessing of cannon algorithm
 """
-import multiprocess
+import multiprocessing
 import numpy as np
 import sys
 sys.path.append('/Users/junnnn/Desktop/NUS/Hardware/CA2/ceg5201_ca2')  # path of the folder
 from utils.time_consume import pair_timing_decorator
 from utils.matrix_operations import split_matrix_4
-from multiprocess import Pool, cpu_count
+from multiprocessing import Pool, cpu_count
 import cannon
 
 # combine 16 sub matrices into a large one
