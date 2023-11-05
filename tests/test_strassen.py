@@ -8,9 +8,6 @@
     @github : https://github.com/frankRenlf
     @Description : test for strassen by using default_test.py
 """
-
-import numpy as np
-
 from matricx_multiply_algorithms.strassen.strassen import execute_strassen
 from matricx_multiply_algorithms.strassen.strassen_multiprocessing import execute_strassen_multiprocessing
 from default_test import one_pair, one_group, total_groups
@@ -18,8 +15,8 @@ from utils.matrix_operations import matrix_pair
 
 
 def pair_test():
-    one_pair(matrix_pair.data[0][0], execute_strassen)
-    one_pair(matrix_pair.data[0][0], execute_strassen_multiprocessing)
+    one_pair(matrix_pair.data[0][2], execute_strassen)
+    one_pair(matrix_pair.data[0][2], execute_strassen_multiprocessing)
 
 
 def group_test():
@@ -40,4 +37,3 @@ if __name__ == "__main__":
     # test1(0, execute_strassen_multiprocessing)
     # group_test()
     pair_test()
-
