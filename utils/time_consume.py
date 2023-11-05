@@ -9,7 +9,6 @@
     @Description : time consume decorators
 """
 import time
-from utils.results_generate import print_to_file
 
 
 def pair_timing_decorator(func):
@@ -19,8 +18,8 @@ def pair_timing_decorator(func):
         end_time = time.time()
         elapsed_time = end_time - start_time
         print(f"{func.__name__}, matricx shape {args[0].shape}, took {elapsed_time:.5f} seconds to execute.")
-        print_to_file(f"{func.__name__}, matricx shape {args[0].shape}, took {elapsed_time:.5f} seconds to execute.",
-                      f'./{func.__name__}.txt')
+        # print_to_file(f"{func.__name__}, matricx shape {args[0].shape}, took {elapsed_time:.5f} seconds to execute.",
+        #               f'./{func.__name__}.txt')
         return result
 
     return wrapper
@@ -33,8 +32,8 @@ def group_timing_decorator(func):
         end_time = time.time()
         elapsed_time = end_time - start_time
         print(f"{func.__name__}, {args[0]}, took {elapsed_time:.5f} seconds to execute.")
-        print_to_file(f"{func.__name__}, {args[0]}, took {elapsed_time:.5f} seconds to execute.",
-                      f'./{func.__name__}.txt')
+        # print_to_file(f"{func.__name__}, {args[0]}, took {elapsed_time:.5f} seconds to execute.",
+        #               f'./{func.__name__}.txt')
         return result
 
     return wrapper
@@ -47,8 +46,8 @@ def total_timing_decorator(func):
         end_time = time.time()
         elapsed_time = end_time - start_time
         print(f"{func.__name__}, took {elapsed_time:.5f} seconds to execute.")
-        print_to_file(f"{func.__name__}, took {elapsed_time:.5f} seconds to execute.",
-                      f'./{func.__name__}.txt')
+        # print_to_file(f"{func.__name__}, took {elapsed_time:.5f} seconds to execute.",
+        #               f'./{func.__name__}.txt')
         return result
 
     return wrapper

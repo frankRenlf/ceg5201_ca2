@@ -12,6 +12,7 @@ from matricx_multiply_algorithms.strassen.strassen import execute_strassen
 from matricx_multiply_algorithms.strassen.strassen_multiprocessing import execute_strassen_multiprocessing
 from default_test import one_pair, one_group, total_groups
 from utils.matrix_operations import matrix_pair
+from utils.results_generate import print_to_file
 
 
 def pair_test():
@@ -35,5 +36,6 @@ if __name__ == "__main__":
     # just for test, so use first for the smallest execution time
     # res = []
     # test1(0, execute_strassen_multiprocessing)
-    group_test()
+    print_to_file(pair_test, "./strassen.txt")
+
     # pair_test()
