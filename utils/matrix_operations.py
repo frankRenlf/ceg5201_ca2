@@ -19,25 +19,16 @@ def split_matrix(A):
 
 
 def matrix_multiply(A, B):
-    # A 的列数必须等于 B 的行数
-    rows_A = len(A)
-    cols_A = len(A[0])
-    rows_B = len(B)
-    cols_B = len(B[0])
-
-    # 初始化结果矩阵 C
-    C = [[0 for row in range(cols_B)] for col in range(rows_A)]
-
-    # 只有当 A 的列数等于 B 的行数时，才能进行矩阵乘法
-    if cols_A != rows_B:
-        return "Cannot multiply the two matrices. Incorrect dimensions."
-
-    # 执行矩阵乘法
-    for i in range(rows_A):
-        for j in range(cols_B):
-            for k in range(cols_A):
-                C[i][j] += A[i][k] * B[k][j]
-    return C
+    row_len = len(A)
+    column_len = len(B[0])
+    cross_len = len(B)
+    res_mat = [[0] * column_len] * row_len
+    for i in range(row_len):
+        for j in range(column_len):
+            for k in range(cross_len):
+                temp = A[i][k] * B[k][j]
+                res_mat[i][j] += temp
+    return res_mat
 
 
 def split_matrix_4(A):
@@ -87,4 +78,9 @@ class MatrixPair:
 
 # data shape is : NUM_GROUPS*len(M)*2
 matrix_pair = MatrixPair()
-# print(matrix_pair.data[0][7][1].shape)
+# print(matrix_pair.data[0][0][1].shape)
+# if __name__ == "__main__":
+#     # code for test
+#     c = matrix_pair.data[0][0][0]@matrix_pair.data[0][0][1]
+#     c2 = matrix_multiply(matrix_pair.data[0][0][1], matrix_pair.data[0][0][0])
+#     print(c[:] == c2[:])
