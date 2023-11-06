@@ -18,26 +18,42 @@ def split_matrix(A):
     return A[:row2, :col2], A[:row2, col2:], A[row2:, :col2], A[row2:, col2:]
 
 
-def matrix_multiply(A, B):
-    # A 的列数必须等于 B 的行数
-    rows_A = len(A)
-    cols_A = len(A[0])
-    rows_B = len(B)
-    cols_B = len(B[0])
+def matrix_multiply_4(A, B):
 
-    # 初始化结果矩阵 C
-    C = [[0 for row in range(cols_B)] for col in range(rows_A)]
+    C = np.zeros((4, 4))
+    C[0][0] = A[0][0] * B[0][0] + A[0][1] * B[1][0] + A[0][2] * B[2][0] + A[0][3] * B[3][0]
+    C[0][1] = A[0][0] * B[0][1] + A[0][1] * B[1][1] + A[0][2] * B[2][1] + A[0][3] * B[3][1]
+    C[0][2] = A[0][0] * B[0][2] + A[0][1] * B[1][2] + A[0][2] * B[2][2] + A[0][3] * B[3][2]
+    C[0][3] = A[0][0] * B[0][3] + A[0][1] * B[1][3] + A[0][2] * B[2][3] + A[0][3] * B[3][3]
 
-    # 只有当 A 的列数等于 B 的行数时，才能进行矩阵乘法
-    if cols_A != rows_B:
-        return "Cannot multiply the two matrices. Incorrect dimensions."
+    C[1][0] = A[1][0] * B[0][0] + A[1][1] * B[1][0] + A[1][2] * B[2][0] + A[1][3] * B[3][0]
+    C[1][1] = A[1][0] * B[0][1] + A[1][1] * B[1][1] + A[1][2] * B[2][1] + A[1][3] * B[3][1]
+    C[1][2] = A[1][0] * B[0][2] + A[1][1] * B[1][2] + A[1][2] * B[2][2] + A[1][3] * B[3][2]
+    C[1][3] = A[1][0] * B[0][3] + A[1][1] * B[1][3] + A[1][2] * B[2][3] + A[1][3] * B[3][3]
 
-    # 执行矩阵乘法
-    for i in range(rows_A):
-        for j in range(cols_B):
-            for k in range(cols_A):
-                C[i][j] += A[i][k] * B[k][j]
+    C[2][0] = A[2][0] * B[0][0] + A[2][1] * B[1][0] + A[2][2] * B[2][0] + A[2][3] * B[3][0]
+    C[2][1] = A[2][0] * B[0][1] + A[2][1] * B[1][1] + A[2][2] * B[2][1] + A[2][3] * B[3][1]
+    C[2][2] = A[2][0] * B[0][2] + A[2][1] * B[1][2] + A[2][2] * B[2][2] + A[2][3] * B[3][2]
+    C[2][3] = A[2][0] * B[0][3] + A[2][1] * B[1][3] + A[2][2] * B[2][3] + A[2][3] * B[3][3]
+
+    C[3][0] = A[3][0] * B[0][0] + A[3][1] * B[1][0] + A[3][2] * B[2][0] + A[3][3] * B[3][0]
+    C[3][1] = A[3][0] * B[0][1] + A[3][1] * B[1][1] + A[3][2] * B[2][1] + A[3][3] * B[3][1]
+    C[3][2] = A[3][0] * B[0][2] + A[3][1] * B[1][2] + A[3][2] * B[2][2] + A[3][3] * B[3][2]
+    C[3][3] = A[3][0] * B[0][3] + A[3][1] * B[1][3] + A[3][2] * B[2][3] + A[3][3] * B[3][3]
+
     return C
+
+
+    # # 只有当 A 的列数等于 B 的行数时，才能进行矩阵乘法
+    # if cols_A != rows_B:
+    #     return "Cannot multiply the two matrices. Incorrect dimensions."
+
+    # # 执行矩阵乘法
+    # for i in range(rows_A):
+    #     for j in range(cols_B):
+    #         for k in range(cols_A):
+    #             C[i][j] += A[i][k] * B[k][j]
+    # return C
 
 
 def split_matrix_4(A):
