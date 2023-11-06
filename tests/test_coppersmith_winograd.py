@@ -3,7 +3,6 @@
 
 """
 
-import numpy as np
 
 from matricx_multiply_algorithms.coppersmith_winograd.coppersmith_winograd import execute_coppersmith_winograd, \
     coppersmith_winograd
