@@ -7,7 +7,7 @@ import numpy as np
 
 from matricx_multiply_algorithms.coppersmith_winograd.coppersmith_winograd import execute_coppersmith_winograd,coppersmith_winograd
 from matricx_multiply_algorithms.coppersmith_winograd.coppersmith_winograd_multiprocessing import execute_coppersmith_winograd_multiprocessing
-from default_test import one_pair, one_group, total_groups
+from tests.default_test import one_pair, one_group, total_groups
 from utils.matrix_operations import matrix_pair
 
 
