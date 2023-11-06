@@ -14,7 +14,7 @@ import sys
 
 sys.path.append('/Users/junnnn/Desktop/NUS/Hardware/CA2/ceg5201_ca2')  # path of the folder
 from utils.time_consume import pair_timing_decorator
-from utils.matrix_operations import split_matrix_4, matrix_multiply
+from utils.matrix_operations import split_matrix_4, matrix_multiply_4
 from multiprocessing import Pool, cpu_count
 import cannon
 
@@ -34,8 +34,8 @@ def parallel_cannon(A, B):
 
 @pair_timing_decorator
 def execute_parallel_cannon(A, B):
-    if A.shape[0] < 4 or B.shape[0] < 4:
-        return matrix_multiply(A, B)
+    if A.shape[0] <= 4 or B.shape[0] <= 4:
+        return matrix_multiply_4(A, B)
     A11, A12, A13, A14, A21, A22, A23, A24, A31, A32, A33, A34, A41, A42, A43, A44 = split_matrix_4(A)
     B11, B12, B13, B14, B21, B22, B23, B24, B31, B32, B33, B34, B41, B42, B43, B44 = split_matrix_4(B)
 
@@ -77,11 +77,12 @@ def execute_parallel_cannon(A, B):
     C = combine_matrix(*C_sub)
     return C
 
-# codes for test
-# A = np.random.rand(1024, 1024)
-# B = np.random.rand(1024, 1024)
+if __name__ == '__main__':
+    # codes for test
+    A = np.random.rand(16, 16)
+    B = np.random.rand(16, 16)
 
-# C_parallel = execute_parallel_cannon(A, B)
+    C_parallel = execute_parallel_cannon(A, B)
 
-# assert np.allclose(C_parallel, A @ B, atol=1e-6)
-# print("Parallel Cannon: correct!")
+    assert np.allclose(C_parallel, A @ B, atol=1e-6)
+    print("Parallel Cannon: correct!")

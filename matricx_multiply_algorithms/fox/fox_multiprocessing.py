@@ -3,7 +3,7 @@ import sys
 sys.path.append(r"C:/Users/Harrison/Desktop/Sg2023/Semaster 1/CEG 5201 hardware/CA announce/ceg5201_ca2")
 from utils.time_consume import pair_timing_decorator
 from multiprocessing import Pool, cpu_count
-from utils.matrix_operations import split_matrix_4, matrix_multiply
+from utils.matrix_operations import split_matrix_4, matrix_multiply_4
 from multiprocessing import freeze_support
 from matricx_multiply_algorithms.fox.fox import fox,combine_matrix
 from utils.time_consume import group_timing_decorator, total_timing_decorator
@@ -18,7 +18,7 @@ def matrix_add(*matrices):
 
 def fox_multiprocessing(A, B, depth=0, max_depth=1):
     if A.shape[0] <= 4 or B.shape[0] <= 4:
-        return matrix_multiply(A, B)
+        return matrix_multiply_4(A, B)
     A11, A12, A13, A14, A21, A22, A23, A24, A31, A32, A33, A34, A41, A42, A43, A44 = split_matrix_4(A)
     B11, B12, B13, B14, B21, B22, B23, B24, B31, B32, B33, B34, B41, B42, B43, B44 = split_matrix_4(B)
     C11 = [[A11, B11], [A12, B21], [A13, B31], [A14, B41]]
