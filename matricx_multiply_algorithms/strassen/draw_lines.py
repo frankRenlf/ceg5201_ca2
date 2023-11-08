@@ -105,6 +105,6 @@ if __name__ == "__main__":
         data_pair,
         data_cumulate
     ]
-    draw_g0(data[0])
-    draw_pair(data[1])
-    draw_cumulate(data[2])
+    draw_g0(data[0], 'data/')
+    draw_pair(data[1], 'data/')
+    draw_cumulate(data[2], 'data/')

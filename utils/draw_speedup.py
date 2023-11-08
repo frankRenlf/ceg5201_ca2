@@ -10,7 +10,7 @@
 """
 
 
-def speedup_plot(speedups, labels, filename="speedup_plot.png"):
+def speedup_plot(speedups, labels, path, filename="speedup_plot.png"):
     import matplotlib.pyplot as plt
     import numpy as np
 
@@ -25,32 +25,31 @@ def speedup_plot(speedups, labels, filename="speedup_plot.png"):
     plt.ylabel("Speedup")
     plt.title("Speedup for processes in Strassen's Algorithm")
     plt.legend(loc='best')
-    # 在显示图像之前保存图像。可以指定保存的文件名和分辨率。
-    plt.savefig("data/" + filename, dpi=300)
+    plt.savefig(path + filename, dpi=300)
 
     # 现在展示图像
     plt.show()
 
 
-def draw_g0(data):
+def draw_g0(data, path):
     speedup = [data[0] / data[i] for i in range(0, len(data))]
     print(speedup)
     speedups = [speedup]
     labels = ['g0']
-    speedup_plot(speedups, labels, filename="pair_speedup.png")
+    speedup_plot(speedups, labels, path, filename="g0_speedup.png")
 
 
-def draw_pair(data):
+def draw_pair(data, path):
     speedups = [[data[i][0] / data[i][j] for j in range(0, len(data[i]) // 2)] for i in range(0, len(data))]
     labels = ['pair0', 'pair1', 'pair2', 'pair3', 'pair4', 'pair5', 'pair6', 'pair7']
     print(len(speedups))
-    speedup_plot(speedups, labels, filename="pair_speedup.png")
+    speedup_plot(speedups, labels, path, filename="pair_speedup.png")
 
 
-def draw_cumulate(data):
+def draw_cumulate(data, path):
     speedups = [[data[i][0] / data[i][j] for j in range(len(data[i]) // 2, len(data[i]))] for i in range(0, len(data))]
     labels = ['pair0-0', 'pair0-1', 'pair0-2', 'pair0-3', 'pair0-4', 'pair0-5', 'pair0-6', 'pair0-7==G0']
     print(len(speedups))
-    speedup_plot(speedups, labels, filename="pair_cumulate_speedup.png")
+    speedup_plot(speedups, labels, path, filename="pair_cumulate_speedup.png")
 
 # if __name__ == "__main__":
