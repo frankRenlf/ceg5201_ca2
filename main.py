@@ -13,11 +13,12 @@ from tests import test_strassen
 from tests import test_coppersmith_winograd
 
 
-def run_all():
+def run_all(data=matrix_pair.data):
+    assert data is not None
     # run strassen
-    test_strassen.total_groups_test(matrix_pair.data)
+    test_strassen.total_groups_test(data)
     # run coppersmith_winograd
-    test_coppersmith_winograd.total_groups_test_coppersmith_winograd(matrix_pair.data)
+    test_coppersmith_winograd.total_groups_test_coppersmith_winograd(data)
     # run others....
 
 
