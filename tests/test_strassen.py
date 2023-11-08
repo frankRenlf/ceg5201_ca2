@@ -48,5 +48,6 @@ if __name__ == "__main__":
     # test1(0, execute_strassen_multiprocessing)
     # save_to_file(, "../matricx_multiply_algorithms/strassen/strassen.txt")
     # total_groups_test(matrix_pair.data)
-    total_groups_test_multi(matrix_pair.data)
+    # total_groups_test_multi(matrix_pair.data)
+    groups_test_multi()
     print('finish')

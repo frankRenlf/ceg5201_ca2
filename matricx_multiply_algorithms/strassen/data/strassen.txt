@@ -1,4 +1,6 @@
 /Users/frank/anaconda3/envs/d2l-zh/bin/python /Users/frank/Desktop/ceg5201_ca2/tests/test_strassen.py
+1 sequential
+
 execute_strassen, matricx shape (16, 16), took 0.00464 seconds to execute.
 execute_strassen, matricx shape (32, 32), took 0.03200 seconds to execute.
 execute_strassen, matricx shape (64, 64), took 0.22508 seconds to execute.
@@ -90,6 +92,7 @@ execute_strassen, matricx shape (1024, 1024), took 605.72691 seconds to execute.
 execute_strassen, matricx shape (2048, 2048), took 4065.13213 seconds to execute.
 one_group, 9, took 4771.99412 seconds to execute.
 
+7 parallel
 execute_strassen_multiprocessing, matricx shape (16, 16), took 2.09884 seconds to execute.
 execute_strassen_multiprocessing, matricx shape (32, 32), took 1.92278 seconds to execute.
 execute_strassen_multiprocessing, matricx shape (64, 64), took 1.74047 seconds to execute.
@@ -144,3 +147,97 @@ execute_strassen_multiprocessing, matricx shape (512, 512), took 14.22060 second
 execute_strassen_multiprocessing, matricx shape (1024, 1024), took 91.26425 seconds to execute.
 execute_strassen_multiprocessing, matricx shape (2048, 2048), took 630.95677 seconds to execute.
 one_group, 5, took 745.54265 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (16, 16), took 1.31519 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (32, 32), took 1.34738 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (64, 64), took 1.45388 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (128, 128), took 1.60809 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (256, 256), took 3.17723 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (512, 512), took 13.94193 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (1024, 1024), took 89.80875 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (2048, 2048), took 640.77439 seconds to execute.
+one_group, 6, took 753.42764 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (16, 16), took 1.24418 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (32, 32), took 1.36617 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (64, 64), took 1.47868 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (128, 128), took 1.63859 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (256, 256), took 3.30450 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (512, 512), took 14.47588 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (1024, 1024), took 90.06943 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (2048, 2048), took 639.92324 seconds to execute.
+one_group, 7, took 753.50113 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (16, 16), took 1.22160 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (32, 32), took 1.34966 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (64, 64), took 1.40479 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (128, 128), took 1.65264 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (256, 256), took 3.20513 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (512, 512), took 14.25275 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (1024, 1024), took 92.83895 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (2048, 2048), took 618.73755 seconds to execute.
+one_group, 8, took 734.66352 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (16, 16), took 1.26594 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (32, 32), took 1.36619 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (64, 64), took 1.42190 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (128, 128), took 1.66215 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (256, 256), took 3.18104 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (512, 512), took 13.87617 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (1024, 1024), took 91.52034 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (2048, 2048), took 619.38355 seconds to execute.
+one_group, 9, took 733.67769 seconds to execute.
+
+6 parallel
+execute_strassen_multiprocessing, matricx shape (16, 16), took 0.92897 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (32, 32), took 0.82690 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (64, 64), took 0.91206 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (128, 128), took 1.32587 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (256, 256), took 4.26090 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (512, 512), took 25.18646 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (1024, 1024), took 167.73979 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (2048, 2048), took 1169.04783 seconds to execute.
+one_group, 0, took 1370.22923 seconds to execute.
+finish
+
+5 parallel
+execute_strassen_multiprocessing, matricx shape (16, 16), took 0.84317 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (32, 32), took 0.76263 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (64, 64), took 0.83393 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (128, 128), took 1.25072 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (256, 256), took 4.24360 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (512, 512), took 25.07228 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (1024, 1024), took 170.41207 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (2048, 2048), took 1196.58191 seconds to execute.
+one_group, 0, took 1400.00070 seconds to execute.
+finish
+
+4 parallel
+execute_strassen_multiprocessing, matricx shape (16, 16), took 0.75074 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (32, 32), took 0.71878 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (64, 64), took 0.81815 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (128, 128), took 1.21201 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (256, 256), took 4.27865 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (512, 512), took 25.37188 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (1024, 1024), took 176.46187 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (2048, 2048), took 1196.58191 seconds to execute.
+one_group, 0, took 1400.00070 seconds to execute.
+finish
+
+3 parallel
+execute_strassen_multiprocessing, matricx shape (16, 16), took 0.70180 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (32, 32), took 0.69545 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (64, 64), took 0.76634 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (128, 128), took 1.37842 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (256, 256), took 5.76067 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (512, 512), took 36.86683 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (1024, 1024), took 254.69272 seconds to execute.
+execute_strassen_multiprocessing, matricx shape (2048, 2048), took 1772.02916 seconds to execute.
+one_group, 0, took 2072.89184 seconds to execute.
+finish
+
+& 9400.82966 & 5941.20204 & 4152.84367 & 3136.26985 & 2805.61997 & 2744.94767 &
+& 14112.00674 & 8906.0749 & 6226.95989 & 4694.59795 & 4212.98198& & 4111.65508 &
+& 18811.15497 & 11889.74433 & 8295.20237 & 6259.39152 & 5616.56956 & 5476.1675 &
+& 23516.47824 & 14861.69579 & 10370.65735 & 7822.52096 & 7026.32987 & 6840.77894 &
+& 28216.72395 & 17841.46499 & 12445.20448 & 9388.64457 & 8429.18606 & 8217.78902 &
+& 32916.60918 & 20822.20318 & 14510.06739 & 10953.69865 & 9826.62179 & 9582.24688 &
+& 37615.38435 & 23787.79015 & 16583.6541 & 12528.05127 & 11225.50548 & 10949.3586 &
+& 42326.48806 & 26758.91986 & 18665.34838 & 14092.26926 & 12625.78324 & 12312.60362 &
+& 47022.2099 & 29741.12373 & 20733.9221 & 15654.51284 & 14019.91628 & 13689.06446 &
