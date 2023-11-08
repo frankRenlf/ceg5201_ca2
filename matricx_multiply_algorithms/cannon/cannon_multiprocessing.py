@@ -14,9 +14,9 @@ import sys
 
 sys.path.append('/Users/junnnn/Desktop/NUS/Hardware/CA2/ceg5201_ca2')  # path of the folder
 from utils.time_consume import pair_timing_decorator
-from utils.matrix_operations import split_matrix_4, matrix_multiply_4
+from utils.matrix_operations import split_matrix_4, matrix_multiply_4, matrix_multiply_2
 from multiprocessing import Pool, cpu_count
-import cannon
+from matricx_multiply_algorithms.cannon.cannon import cannon
 
 
 # combine 16 sub matrices into a large one
@@ -29,13 +29,16 @@ def combine_matrix(C11, C12, C13, C14, C21, C22, C23, C24, C31, C32, C33, C34, C
 
 
 def parallel_cannon(A, B):
-    return cannon.cannon(A, B)
+    return cannon(A, B)
 
 
 @pair_timing_decorator
 def execute_parallel_cannon(A, B):
-    if A.shape[0] <= 4 or B.shape[0] <= 4:
-        return matrix_multiply_4(A, B)
+    if A.shape[0] < 4 or B.shape[0] < 4:
+        if A.shape[0] == 4:
+            return matrix_multiply_4(A, B)
+        else:
+            return matrix_multiply_2(A, B)
     A11, A12, A13, A14, A21, A22, A23, A24, A31, A32, A33, A34, A41, A42, A43, A44 = split_matrix_4(A)
     B11, B12, B13, B14, B21, B22, B23, B24, B31, B32, B33, B34, B41, B42, B43, B44 = split_matrix_4(B)
 
@@ -62,7 +65,7 @@ def execute_parallel_cannon(A, B):
 
     tasks = C11 + C12 + C13 + C14 + C21 + C22 + C23 + C24 + C31 + C32 + C33 + C34 + C41 + C42 + C43 + C44
 
-    with Pool(processes=cpu_count()) as pool:
+    with Pool(processes = 6) as pool:
         results = pool.starmap(parallel_cannon, tasks)
 
     # Combine to form the sub-matrices of C
@@ -79,8 +82,8 @@ def execute_parallel_cannon(A, B):
 
 if __name__ == '__main__':
     # codes for test
-    A = np.random.rand(16, 16)
-    B = np.random.rand(16, 16)
+    A = np.random.rand(128, 128)
+    B = np.random.rand(128, 128)
 
     C_parallel = execute_parallel_cannon(A, B)
 
