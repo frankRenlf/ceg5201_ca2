@@ -25,8 +25,18 @@ def group_test():
     one_group(0, matrix_pair.data[0], execute_strassen_multiprocessing)
 
 
+def groups_test_multi():
+    # total_groups(data, execute_strassen)
+    one_group(0, matrix_pair.data[0], execute_strassen_multiprocessing)
+
+
 def total_groups_test(data):
     total_groups(data, execute_strassen)
+    total_groups(data, execute_strassen_multiprocessing)
+
+
+def total_groups_test_multi(data):
+    # total_groups(data, execute_strassen)
     total_groups(data, execute_strassen_multiprocessing)
 
 
@@ -36,6 +46,7 @@ if __name__ == "__main__":
     # just for test, so use first for the smallest execution time
     # res = []
     # test1(0, execute_strassen_multiprocessing)
-    save_to_file(pair_test, "../matricx_multiply_algorithms/strassen/strassen.txt")
-
-    # pair_test()
+    # save_to_file(, "../matricx_multiply_algorithms/strassen/strassen.txt")
+    # total_groups_test(matrix_pair.data)
+    total_groups_test_multi(matrix_pair.data)
+    print('finish')
