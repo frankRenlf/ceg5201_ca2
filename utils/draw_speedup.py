@@ -27,7 +27,6 @@ def speedup_plot(speedups, labels, path, filename="speedup_plot.png"):
     plt.legend(loc='best')
     plt.savefig(path + filename, dpi=300)
 
-    # 现在展示图像
     plt.show()
 
 
