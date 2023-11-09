@@ -8,7 +8,7 @@
     @github : https://github.com/frankRenlf
     @Description : draw the speedup plot strassen
 """
-from utils.draw_speedup import draw_g0, draw_pair, draw_cumulate
+from utils.draw_speedup import draw_g0, draw_pair, draw_cumulate_pair, draw_group
 
 
 def get_data():
@@ -100,11 +100,14 @@ if __name__ == "__main__":
             4042.34250, 2534.80597, 1772.02916, 1355.47332, 1196.58191, 1169.04783, 654.47033, 4704.55467,
             2974.09014, 2072.89184, 1565.0854, 1400.00070, 1370.22923, 774.75576]
     ]
+    data_groups = [47022.2099, 29741.12373, 20733.9221, 15654.51284, 14019.91628, 13689.06446, 7471.14211]
     data = [
         data_g0,
         data_pair,
-        data_cumulate
+        data_cumulate,
+        data_groups + data_g0
     ]
     draw_g0(data[0], 'data/')
     draw_pair(data[1], 'data/')
-    draw_cumulate(data[2], 'data/')
+    draw_cumulate_pair(data[2], 'data/')
+    draw_group(data[3], 'data/')

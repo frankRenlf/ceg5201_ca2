@@ -23,7 +23,7 @@ def speedup_plot(speedups, labels, path, filename="speedup_plot.png"):
 
     plt.xlabel("Number of Processes")
     plt.ylabel("Speedup")
-    plt.title("Speedup for processes")
+    plt.title("Speedup for processes: " + filename.split(".")[0])
     plt.legend(loc='best')
     plt.savefig(path + filename, dpi=300)
 
@@ -34,8 +34,8 @@ def draw_g0(data, path):
     speedup = [data[0] / data[i] for i in range(0, len(data))]
     print(speedup)
     speedups = [speedup]
-    labels = ['g0']
-    speedup_plot(speedups, labels, path, filename="g0_speedup.png")
+    labels = ['G0']
+    speedup_plot(speedups, labels, path, filename="G0_speedup.png")
 
 
 def draw_pair(data, path):
@@ -45,7 +45,15 @@ def draw_pair(data, path):
     speedup_plot(speedups, labels, path, filename="pair_speedup.png")
 
 
-def draw_cumulate(data, path):
+def draw_group(data, path):
+    speedups = [[data[0] / data[i] for i in range(0, len(data) // 2)],
+                [data[len(data) // 2] / data[i] for i in range(len(data) // 2, len(data))]]
+    labels = ['All groups', 'group0']
+    print(len(speedups))
+    speedup_plot(speedups, labels, path, filename="group_speedup.png")
+
+
+def draw_cumulate_pair(data, path):
     speedups = [[data[i][0] / data[i][j] for j in range(len(data[i]) // 2, len(data[i]))] for i in range(0, len(data))]
     labels = ['pair0-0', 'pair0-1', 'pair0-2', 'pair0-3', 'pair0-4', 'pair0-5', 'pair0-6', 'pair0-7==G0']
     print(len(speedups))
