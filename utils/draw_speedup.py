@@ -23,7 +23,7 @@ def speedup_plot(speedups, labels, path, filename="speedup_plot.png"):
 
     plt.xlabel("Number of Processes")
     plt.ylabel("Speedup")
-    plt.title("Speedup for processes in Strassen's Algorithm")
+    plt.title("Speedup for processes")
     plt.legend(loc='best')
     plt.savefig(path + filename, dpi=300)
 
