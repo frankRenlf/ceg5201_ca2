@@ -6,22 +6,34 @@ use this to get the latest version of the code
 git pull
 ```
 
-use this to run all, and the time consumption result will print in the terminal.
-
+use this to run all, and the time consumption result will print or save depends on your chosen.
 ```bash
 python main.py
 ```
 
-choose this func to print the result in the terminal
+enter 1 to choose this func to print the result in the terminal
 
 ```text
 run2terminal()
 ```
 
-and if you want to save the result to file, you can use
+and if you want to save the result to file, you can enter 2
 
 ```text
 run2file()
+```
+
+```text
+def switch():
+    chosen = input("please choose the way to run the test:\n")
+    if chosen == '1':
+        run2file()
+    elif chosen == '2':
+        run2terminal()
+
+
+if __name__ == "__main__":
+    switch()
 ```
 
 if you want to change the process, you can change the 'algorithm'_multiprocessing.py in
