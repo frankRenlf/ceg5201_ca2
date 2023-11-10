@@ -1,6 +1,12 @@
 # -*- coding: UTF-8 -*-
 """
-
+    @Author : YICHENG LUO
+    @Project : ceg5201_ca2
+    @Product : PyCharm
+    @createTime : 2023/10/20 09:49
+    @Email : e1143579@u.nus.edu
+    @github : https://github.com/GH-YC-L
+    @Description :
 """
 
 import numpy as np
@@ -25,7 +31,7 @@ def coppersmith_winograd(X, Y):
     T4 = T2 - Y21
 
     args = [[X11, Y11], [X12, Y21], [S4, Y22], [X22, T4], [S1, T1], [S2, T2], [S3, T3]]
-    #           W1           W2        W3          W4        W5        W6        W7
+    #           M1           M2        M3          M4        M5        M6        M7
     M = [coppersmith_winograd(a[0], a[1]) for a in args]
 
     Z11 = M[0] + M[1]

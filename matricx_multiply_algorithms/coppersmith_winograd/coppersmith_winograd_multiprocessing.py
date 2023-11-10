@@ -1,5 +1,12 @@
 # -*- coding: UTF-8 -*-
 """
+    @Author : YICHENG LUO
+    @Project : ceg5201_ca2
+    @Product : PyCharm
+    @createTime : 2023/10/20 09:49
+    @Email : e1143579@u.nus.edu
+    @github : https://github.com/GH-YC-L
+    @Description :
 """
 
 import numpy as np
@@ -27,11 +34,11 @@ def coppersmith_coppersmith_winograd_multiprocessing(X, Y, depth=0, max_depth=1)
     T2 = Y22 - T1
     T3 = Y22 - Y12
     T4 = T2 - Y21
-
     args = [[X11, Y11], [X12, Y21], [S4, Y22], [X22, T4], [S1, T1], [S2, T2], [S3, T3]]
     #           W1           W2        W3          W4        W5        W6        W7
     if depth < max_depth:
         with Pool(processes=cpu_count()) as pool:
+        # with Pool(processes=3) as pool:
             args_a = [el + [depth + 1] for el in args]
             M = pool.map(parallel_coppersmith_winograd, args_a)
     else:

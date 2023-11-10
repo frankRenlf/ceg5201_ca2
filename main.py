@@ -17,9 +17,15 @@ from utils.results_generate import save_to_file
 def run_all(data=matrix_pair.data):
     assert data is not None
     # run strassen
+<<<<<<< HEAD
     test_strassen.total_groups_test(data)
     # run coppersmith_winograd
     test_coppersmith_winograd.total_groups_test_coppersmith_winograd(data)
+=======
+    test_strassen.total_groups_test(matrix_pair.data)
+    # run coppersmith_winggrad
+    test_coppersmith_winograd.total_groups_test_coppersmith_winograd(matrix_pair.data)
+>>>>>>> origin/Coppersmith–Winograd
     # run others....
 
 
