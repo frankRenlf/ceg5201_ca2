@@ -11,6 +11,7 @@
 from utils.matrix_operations import matrix_pair
 from tests import test_strassen
 from tests import test_coppersmith_winograd
+from utils.results_generate import save_to_file
 
 
 def run_all(data=matrix_pair.data):
@@ -22,5 +23,13 @@ def run_all(data=matrix_pair.data):
     # run others....
 
 
-if __name__ == "__main__":
+def run2terminal():  # print result to terminal
     run_all()
+
+
+def run2file():  # save result to file
+    save_to_file(run_all, "output.txt")
+
+
+if __name__ == "__main__":
+    run2terminal()
