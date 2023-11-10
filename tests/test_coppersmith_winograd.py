@@ -1,6 +1,12 @@
 # -*- coding: UTF-8 -*-
 """
-
+    @Author : YICHENG LUO
+    @Project : ceg5201_ca2
+    @Product : PyCharm
+    @createTime : 2023/10/20 09:49
+    @Email : e1143579@u.nus.edu
+    @github : https://github.com/GH-YC-L
+    @Description :
 """
 
 import numpy as np
@@ -20,19 +26,23 @@ def group_test_coppersmith_winograd():
     one_group(0, matrix_pair.data[0], execute_coppersmith_winograd)
     one_group(0, matrix_pair.data[0], execute_coppersmith_winograd_multiprocessing)
 
+
 def total_groups_test_coppersmith_winograd(data):
     total_groups(data, execute_coppersmith_winograd)
     total_groups(data, execute_coppersmith_winograd_multiprocessing)
 
+
 if __name__ == "__main__":
     group_0 = matrix_pair.data[0]
-    #results = [coppersmith_winograd(pair[0], pair[1]) for pair in group_0]
+    # print(group_0)
+    # results = [coppersmith_winograd(pair[0], pair[1]) for pair in group_0]
     # just for test, so use first for the smallest execution time
     # res = []
     # test1(0, execute_coppersmith_winograd_multiprocessing)
-    #group_test_coppersmith_winograd()
-    #print('++++++++++++++++++++++++++++++++')
+    # group_test_coppersmith_winograd()
+    # print('++++++++++++++++++++++++++++++++')
     # pair_test_coppersmith_winograd()
     # results = [coppersmith_winograd(pair[0], pair[1]) for pair in matrix_pair.data]
-    total_groups_test_coppersmith_winograd(group_0)
+    group_test_coppersmith_winograd()
+    # total_groups_test_coppersmith_winograd()
     print('finish')

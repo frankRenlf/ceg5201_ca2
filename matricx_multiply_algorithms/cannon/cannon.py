@@ -13,7 +13,8 @@ import numpy as np
 import sys
 sys.path.append('/Users/junnnn/Desktop/NUS/Hardware/CA2/ceg5201_ca2')  # path of the folder
 from utils.time_consume import pair_timing_decorator
-from utils.matrix_operations import split_matrix_4
+from utils.matrix_operations import split_matrix_4, matrix_multiply
+
 
 # combine 16 sub matrices into a large one
 def combine_matrix(C11, C12, C13, C14, C21, C22, C23, C24, C31, C32, C33, C34, C41, C42, C43, C44):
@@ -24,7 +25,7 @@ def combine_matrix(C11, C12, C13, C14, C21, C22, C23, C24, C31, C32, C33, C34, C
     return np.vstack((row1, row2, row3, row4))
 def cannon(A, B):
     if A.shape[0] <= 4 or B.shape[0] <= 4:
-        return A @ B
+        return matrix_multiply(A, B)
     A11, A12, A13, A14, A21, A22, A23, A24, A31, A32, A33, A34, A41, A42, A43, A44 = split_matrix_4(A)
     B11, B12, B13, B14, B21, B22, B23, B24, B31, B32, B33, B34, B41, B42, B43, B44 = split_matrix_4(B)
 

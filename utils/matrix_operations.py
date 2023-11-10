@@ -17,6 +17,29 @@ def split_matrix(A):
     row2, col2 = row // 2, col // 2
     return A[:row2, :col2], A[:row2, col2:], A[row2:, :col2], A[row2:, col2:]
 
+
+def matrix_multiply(A, B):
+    # A 的列数必须等于 B 的行数
+    rows_A = len(A)
+    cols_A = len(A[0])
+    rows_B = len(B)
+    cols_B = len(B[0])
+
+    # 初始化结果矩阵 C
+    C = [[0 for row in range(cols_B)] for col in range(rows_A)]
+
+    # 只有当 A 的列数等于 B 的行数时，才能进行矩阵乘法
+    if cols_A != rows_B:
+        return "Cannot multiply the two matrices. Incorrect dimensions."
+
+    # 执行矩阵乘法
+    for i in range(rows_A):
+        for j in range(cols_B):
+            for k in range(cols_A):
+                C[i][j] += A[i][k] * B[k][j]
+    return C
+
+
 def split_matrix_4(A):
     row, col = A.shape
     per_row, per_col = row // 4, col // 4
@@ -40,6 +63,7 @@ def split_matrix_4(A):
     A43 = A[per_row * 3: per_row * 4, per_col * 2: per_col * 3]
     A44 = A[per_row * 3: per_row * 4, per_col * 3: per_col * 4]
     return A11, A12, A13, A14, A21, A22, A23, A24, A31, A32, A33, A34, A41, A42, A43, A44
+
 
 class MatrixPair:
 

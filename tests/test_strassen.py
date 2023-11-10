@@ -10,7 +10,7 @@
 """
 from matricx_multiply_algorithms.strassen.strassen import execute_strassen
 from matricx_multiply_algorithms.strassen.strassen_multiprocessing import execute_strassen_multiprocessing
-from default_test import one_pair, one_group, total_groups
+from tests.default_test import one_pair, one_group, total_groups
 from utils.matrix_operations import matrix_pair
 from utils.results_generate import save_to_file
 
