@@ -1,0 +1,265 @@
+# cannon's algorithm
+# I have run a lot of experiments. Here shows only one example and only part of the experimental data.
+
+1 sequential:
+execute_parallel_cannon, matricx shape (16, 16), took 0.46138 seconds to execute.
+execute_parallel_cannon, matricx shape (32, 32), took 0.51195 seconds to execute.
+execute_parallel_cannon, matricx shape (64, 64), took 0.53424 seconds to execute.
+execute_parallel_cannon, matricx shape (128, 128), took 1.27918 seconds to execute.
+execute_parallel_cannon, matricx shape (256, 256), took 4.72578 seconds to execute.
+execute_parallel_cannon, matricx shape (512, 512), took 49.78039 seconds to execute.
+execute_parallel_cannon, matricx shape (1024, 1024), took 274.33483 seconds to execute.
+execute_parallel_cannon, matricx shape (2048, 2048), took 3173.30069 seconds to execute.
+one_group, 0, took 3504.92876 seconds to execute.
+
+execute_parallel_cannon, matricx shape (16, 16), took 0.51273 seconds to execute.
+execute_parallel_cannon, matricx shape (32, 32), took 0.48073 seconds to execute.
+execute_parallel_cannon, matricx shape (64, 64), took 0.52318 seconds to execute.
+execute_parallel_cannon, matricx shape (128, 128), took 1.22393 seconds to execute.
+execute_parallel_cannon, matricx shape (256, 256), took 4.73790 seconds to execute.
+execute_parallel_cannon, matricx shape (512, 512), took 49.75068 seconds to execute.
+execute_parallel_cannon, matricx shape (1024, 1024), took 275.85978 seconds to execute.
+execute_parallel_cannon, matricx shape (2048, 2048), took 3238.05396 seconds to execute.
+one_group, 1, took 3571.14323 seconds to execute.
+
+execute_cannon, matricx shape (16, 16), took 0.00111 seconds to execute.
+execute_cannon, matricx shape (32, 32), took 0.01232 seconds to execute.
+execute_cannon, matricx shape (64, 64), took 0.06761 seconds to execute.
+execute_cannon, matricx shape (128, 128), took 0.78445 seconds to execute.
+execute_cannon, matricx shape (256, 256), took 4.35967 seconds to execute.
+execute_cannon, matricx shape (512, 512), took 49.38330 seconds to execute.
+execute_cannon, matricx shape (1024, 1024), took 271.69872 seconds to execute.
+execute_cannon, matricx shape (2048, 2048), took 3122.46529 seconds to execute.
+one_group, 2, took 3448.77354 seconds to execute.
+
+execute_cannon, matricx shape (16, 16), took 0.00117 seconds to execute.
+execute_cannon, matricx shape (32, 32), took 0.01226 seconds to execute.
+execute_cannon, matricx shape (64, 64), took 0.06717 seconds to execute.
+execute_cannon, matricx shape (128, 128), took 0.76898 seconds to execute.
+execute_cannon, matricx shape (256, 256), took 4.25768 seconds to execute.
+execute_cannon, matricx shape (512, 512), took 48.97057 seconds to execute.
+execute_cannon, matricx shape (1024, 1024), took 272.18649 seconds to execute.
+execute_cannon, matricx shape (2048, 2048), took 3162.60437 seconds to execute.
+one_group, 3, took 3488.86989 seconds to execute.
+
+execute_cannon, matricx shape (16, 16), took 0.00110 seconds to execute.
+execute_cannon, matricx shape (32, 32), took 0.01205 seconds to execute.
+execute_cannon, matricx shape (64, 64), took 0.06620 seconds to execute.
+execute_cannon, matricx shape (128, 128), took 0.76763 seconds to execute.
+execute_cannon, matricx shape (256, 256), took 4.24411 seconds to execute.
+execute_cannon, matricx shape (512, 512), took 49.05909 seconds to execute.
+execute_cannon, matricx shape (1024, 1024), took 272.09650 seconds to execute.
+execute_cannon, matricx shape (2048, 2048), took 3119.07616 seconds to execute.
+one_group, 4, took 3445.32330 seconds to execute.
+
+execute_cannon, matricx shape (16, 16), took 0.00113 seconds to execute.
+execute_cannon, matricx shape (32, 32), took 0.01193 seconds to execute.
+execute_cannon, matricx shape (64, 64), took 0.06739 seconds to execute.
+execute_cannon, matricx shape (128, 128), took 0.77154 seconds to execute.
+execute_cannon, matricx shape (256, 256), took 4.23728 seconds to execute.
+execute_cannon, matricx shape (512, 512), took 49.42019 seconds to execute.
+execute_cannon, matricx shape (1024, 1024), took 275.47672 seconds to execute.
+execute_cannon, matricx shape (2048, 2048), took 3182.54262 seconds to execute.
+one_group, 5, took 3512.52985 seconds to execute.
+
+execute_cannon, matricx shape (16, 16), took 0.00112 seconds to execute.
+execute_cannon, matricx shape (32, 32), took 0.01271 seconds to execute.
+execute_cannon, matricx shape (64, 64), took 0.07092 seconds to execute.
+execute_cannon, matricx shape (128, 128), took 0.79697 seconds to execute.
+execute_cannon, matricx shape (256, 256), took 4.31562 seconds to execute.
+execute_cannon, matricx shape (512, 512), took 48.91813 seconds to execute.
+execute_cannon, matricx shape (1024, 1024), took 272.56857 seconds to execute.
+execute_cannon, matricx shape (2048, 2048), took 3176.32133 seconds to execute.
+one_group, 6, took 3503.00623 seconds to execute.
+
+execute_cannon, matricx shape (16, 16), took 0.00110 seconds to execute.
+execute_cannon, matricx shape (32, 32), took 0.01182 seconds to execute.
+execute_cannon, matricx shape (64, 64), took 0.06606 seconds to execute.
+execute_cannon, matricx shape (128, 128), took 0.76826 seconds to execute.
+execute_cannon, matricx shape (256, 256), took 4.24618 seconds to execute.
+execute_cannon, matricx shape (512, 512), took 48.66367 seconds to execute.
+execute_cannon, matricx shape (1024, 1024), took 271.35096 seconds to execute.
+execute_cannon, matricx shape (2048, 2048), took 3183.22119 seconds to execute.
+one_group, 7, took 3508.32983 seconds to execute.
+
+execute_cannon, matricx shape (16, 16), took 0.00134 seconds to execute.
+execute_cannon, matricx shape (32, 32), took 0.01438 seconds to execute.
+execute_cannon, matricx shape (64, 64), took 0.07656 seconds to execute.
+execute_cannon, matricx shape (128, 128), took 0.80450 seconds to execute.
+execute_cannon, matricx shape (256, 256), took 4.20607 seconds to execute.
+execute_cannon, matricx shape (512, 512), took 48.82196 seconds to execute.
+execute_cannon, matricx shape (1024, 1024), took 271.15089 seconds to execute.
+execute_cannon, matricx shape (2048, 2048), took 3118.27787 seconds to execute.
+one_group, 8, took 3443.35422 seconds to execute.
+
+execute_cannon, matricx shape (16, 16), took 0.00113 seconds to execute.
+execute_cannon, matricx shape (32, 32), took 0.01201 seconds to execute.
+execute_cannon, matricx shape (64, 64), took 0.06610 seconds to execute.
+execute_cannon, matricx shape (128, 128), took 0.76160 seconds to execute.
+execute_cannon, matricx shape (256, 256), took 4.21574 seconds to execute.
+execute_cannon, matricx shape (512, 512), took 48.75893 seconds to execute.
+execute_cannon, matricx shape (1024, 1024), took 269.60597 seconds to execute.
+execute_cannon, matricx shape (2048, 2048), took 3120.10677 seconds to execute.
+one_group, 9, took 3443.52884 seconds to execute.
+
+
+7 processors
+execute_parallel_cannon, matricx shape (16, 16), took 1.32808 seconds to execute.
+execute_parallel_cannon, matricx shape (32, 32), took 1.25068 seconds to execute.
+execute_parallel_cannon, matricx shape (64, 64), took 1.25144 seconds to execute.
+execute_parallel_cannon, matricx shape (128, 128), took 1.39554 seconds to execute.
+execute_parallel_cannon, matricx shape (256, 256), took 2.06915 seconds to execute.
+execute_parallel_cannon, matricx shape (512, 512), took 11.73985 seconds to execute.
+execute_parallel_cannon, matricx shape (1024, 1024), took 65.27980 seconds to execute.
+execute_parallel_cannon, matricx shape (2048, 2048), took 840.52606 seconds to execute.
+one_group, 0, took 924.84088 seconds to execute.
+
+execute_parallel_cannon, matricx shape (16, 16), took 1.43905 seconds to execute.
+execute_parallel_cannon, matricx shape (32, 32), took 1.38772 seconds to execute.
+execute_parallel_cannon, matricx shape (64, 64), took 1.30430 seconds to execute.
+execute_parallel_cannon, matricx shape (128, 128), took 1.44496 seconds to execute.
+execute_parallel_cannon, matricx shape (256, 256), took 2.19166 seconds to execute.
+execute_parallel_cannon, matricx shape (512, 512), took 11.89920 seconds to execute.
+execute_parallel_cannon, matricx shape (1024, 1024), took 64.73977 seconds to execute.
+execute_parallel_cannon, matricx shape (2048, 2048), took 807.44031 seconds to execute.
+one_group, 1, took 891.84732 seconds to execute.
+
+execute_parallel_cannon, matricx shape (16, 16), took 1.46386 seconds to execute.
+execute_parallel_cannon, matricx shape (32, 32), took 1.28304 seconds to execute.
+execute_parallel_cannon, matricx shape (64, 64), took 1.32887 seconds to execute.
+execute_parallel_cannon, matricx shape (128, 128), took 1.56358 seconds to execute.
+execute_parallel_cannon, matricx shape (256, 256), took 2.24280 seconds to execute.
+execute_parallel_cannon, matricx shape (512, 512), took 11.98514 seconds to execute.
+execute_parallel_cannon, matricx shape (1024, 1024), took 65.55241 seconds to execute.
+execute_parallel_cannon, matricx shape (2048, 2048), took 807.70036 seconds to execute.
+one_group, 2, took 893.12046 seconds to execute.
+
+execute_parallel_cannon, matricx shape (16, 16), took 1.35712 seconds to execute.
+execute_parallel_cannon, matricx shape (32, 32), took 1.20486 seconds to execute.
+execute_parallel_cannon, matricx shape (64, 64), took 1.22354 seconds to execute.
+execute_parallel_cannon, matricx shape (128, 128), took 1.35623 seconds to execute.
+execute_parallel_cannon, matricx shape (256, 256), took 2.09964 seconds to execute.
+execute_parallel_cannon, matricx shape (512, 512), took 11.75350 seconds to execute.
+execute_parallel_cannon, matricx shape (1024, 1024), took 64.34309 seconds to execute.
+execute_parallel_cannon, matricx shape (2048, 2048), took 801.64879 seconds to execute.
+one_group, 3, took 884.98713 seconds to execute.
+
+execute_parallel_cannon, matricx shape (16, 16), took 1.32808 seconds to execute.
+execute_parallel_cannon, matricx shape (32, 32), took 1.25068 seconds to execute.
+execute_parallel_cannon, matricx shape (64, 64), took 1.25144 seconds to execute.
+execute_parallel_cannon, matricx shape (128, 128), took 1.39554 seconds to execute.
+execute_parallel_cannon, matricx shape (256, 256), took 2.06915 seconds to execute.
+execute_parallel_cannon, matricx shape (512, 512), took 11.73985 seconds to execute.
+execute_parallel_cannon, matricx shape (1024, 1024), took 65.27980 seconds to execute.
+execute_parallel_cannon, matricx shape (2048, 2048), took 840.52606 seconds to execute.
+one_group, 4, took 924.84088 seconds to execute.
+
+execute_parallel_cannon, matrix shape (16, 16), took 1.27668 seconds to execute.
+execute_parallel_cannon, matrix shape (32, 32), took 1.22776 seconds to execute.
+execute_parallel_cannon, matrix shape (64, 64), took 1.23304 seconds to execute.
+execute_parallel_cannon, matrix shape (128, 128), took 1.30896 seconds to execute.
+execute_parallel_cannon, matrix shape (256, 256), took 2.05974 seconds to execute.
+execute_parallel_cannon, matrix shape (512, 512), took 11.89821 seconds to execute.
+execute_parallel_cannon, matrix shape (1024, 1024), took 65.09009 seconds to execute.
+execute_parallel_cannon, matrix shape (2048, 2048), took 806.50072 seconds to execute.
+one_group, 5, took 890.58682seconds to execute.
+
+execute_parallel_cannon, matrix shape (16, 16), took 1.24855 seconds to execute.
+execute_parallel_cannon, matrix shape (32, 32), took 1.20047 seconds to execute.
+execute_parallel_cannon, matrix shape (64, 64), took 1.20565 seconds to execute.
+execute_parallel_cannon, matrix shape (128, 128), took 1.27989 seconds to execute.
+execute_parallel_cannon, matrix shape (256, 256), took 2.00551 seconds to execute.
+execute_parallel_cannon, matrix shape (512, 512), took 11.63385 seconds to execute.
+execute_parallel_cannon, matrix shape (1024, 1024), took 63.64371 seconds to execute.
+execute_parallel_cannon, matrix shape (2048, 2048), took 788.49854 seconds to execute.
+one_group, 6, took 870.79559 seconds to execute.
+
+execute_parallel_cannon, matricx shape (16, 16), took 1.41854 seconds to execute.
+execute_parallel_cannon, matricx shape (32, 32), took 1.36418 seconds to execute.
+execute_parallel_cannon, matricx shape (64, 64), took 1.37006 seconds to execute.
+execute_parallel_cannon, matricx shape (128, 128), took 1.45434 seconds to execute.
+execute_parallel_cannon, matricx shape (256, 256), took 2.27886 seconds to execute.
+execute_parallel_cannon, matricx shape (512, 512), took 13.22029 seconds to execute.
+execute_parallel_cannon, matricx shape (1024, 1024), took 72.32231 seconds to execute.
+execute_parallel_cannon, matricx shape (2048, 2048), took 866.11198 seconds to execute.
+one_group, 7, took 959.54091 seconds to execute.
+
+execute_parallel_cannon, matricx shape (16, 16), took 1.41369 seconds to execute.
+execute_parallel_cannon, matricx shape (32, 32), took 1.38874 seconds to execute.
+execute_parallel_cannon, matricx shape (64, 64), took 1.35022 seconds to execute.
+execute_parallel_cannon, matricx shape (128, 128), took 1.49217 seconds to execute.
+execute_parallel_cannon, matricx shape (256, 256), took 2.31547 seconds to execute.
+execute_parallel_cannon, matricx shape (512, 512), took 13.19591 seconds to execute.
+execute_parallel_cannon, matricx shape (1024, 1024), took 61.31099 seconds to execute.
+execute_parallel_cannon, matricx shape (2048, 2048), took 830.00224 seconds to execute.
+one_group, 8, took 892.46979 seconds to execute.
+
+execute_parallel_cannon, matricx shape (16, 16), took 1.32808 seconds to execute.
+execute_parallel_cannon, matricx shape (32, 32), took 1.25068 seconds to execute.
+execute_parallel_cannon, matricx shape (64, 64), took 1.25144 seconds to execute.
+execute_parallel_cannon, matricx shape (128, 128), took 1.39554 seconds to execute.
+execute_parallel_cannon, matricx shape (256, 256), took 2.06915 seconds to execute.
+execute_parallel_cannon, matricx shape (512, 512), took 11.73985 seconds to execute.
+execute_parallel_cannon, matricx shape (1024, 1024), took 63.27980 seconds to execute.
+execute_parallel_cannon, matricx shape (2048, 2048), took 802.52606 seconds to execute.
+one_group, 9, took 884.84088 seconds to execute.
+
+
+6 processors
+execute_parallel_cannon, matricx shape (16, 16), took 1.29734 seconds to execute.
+execute_parallel_cannon, matricx shape (32, 32), took 1.19875 seconds to execute.
+execute_parallel_cannon, matricx shape (64, 64), took 1.19322 seconds to execute.
+execute_parallel_cannon, matricx shape (128, 128), took 1.36122 seconds to execute.
+execute_parallel_cannon, matricx shape (256, 256), took 2.24369 seconds to execute.
+execute_parallel_cannon, matricx shape (512, 512), took 13.84133 seconds to execute.
+execute_parallel_cannon, matricx shape (1024, 1024), took 76.86702 seconds to execute.
+execute_parallel_cannon, matricx shape (2048, 2048), took 938.59867 seconds to execute.
+one_group, 0, took 1036.60164 seconds to execute.
+
+
+5 processors
+execute_parallel_cannon, matricx shape (16, 16), took 1.07878 seconds to execute.
+execute_parallel_cannon, matricx shape (32, 32), took 0.97020 seconds to execute.
+execute_parallel_cannon, matricx shape (64, 64), took 0.91022 seconds to execute.
+execute_parallel_cannon, matricx shape (128, 128), took 1.09006 seconds to execute.
+execute_parallel_cannon, matricx shape (256, 256), took 2.08354 seconds to execute.
+execute_parallel_cannon, matricx shape (512, 512), took 15.17626 seconds to execute.
+execute_parallel_cannon, matricx shape (1024, 1024), took 86.31989 seconds to execute.
+execute_parallel_cannon, matricx shape (2048, 2048), took 1076.66621 seconds to execute.
+one_group, 0, took 1184.29555 seconds to execute.
+
+
+4 processors
+execute_parallel_cannon, matricx shape (16, 16), took 0.91467 seconds to execute.
+execute_parallel_cannon, matricx shape (32, 32), took 0.90357 seconds to execute.
+execute_parallel_cannon, matricx shape (64, 64), took 0.89626 seconds to execute.
+execute_parallel_cannon, matricx shape (128, 128), took 1.05169 seconds to execute.
+execute_parallel_cannon, matricx shape (256, 256), took 1.98092 seconds to execute.
+execute_parallel_cannon, matricx shape (512, 512), took 13.98864 seconds to execute.
+execute_parallel_cannon, matricx shape (1024, 1024), took 81.87291 seconds to execute.
+execute_parallel_cannon, matricx shape (2048, 2048), took 1109.70733 seconds to execute.
+one_group, 0, took 1211.31639 seconds to execute.
+
+
+3 processors
+execute_parallel_cannon, matricx shape (16, 16), took 0.80849 seconds to execute.
+execute_parallel_cannon, matricx shape (32, 32), took 0.77441 seconds to execute.
+execute_parallel_cannon, matricx shape (64, 64), took 0.74777 seconds to execute.
+execute_parallel_cannon, matricx shape (128, 128), took 1.00792 seconds to execute.
+execute_parallel_cannon, matricx shape (256, 256), took 2.41184 seconds to execute.
+execute_parallel_cannon, matricx shape (512, 512), took 20.12003 seconds to execute.
+execute_parallel_cannon, matricx shape (1024, 1024), took 111.51289 seconds to execute.
+execute_parallel_cannon, matricx shape (2048, 2048), took 1376.41797 seconds to execute.
+one_group, 0, took 1513.80181 seconds to execute.
+
+
+2 processors
+execute_parallel_cannon, matricx shape (16, 16), took 0.65322 seconds to execute.
+execute_parallel_cannon, matricx shape (32, 32), took 0.59568 seconds to execute.
+execute_parallel_cannon, matricx shape (64, 64), took 0.61422 seconds to execute.
+execute_parallel_cannon, matricx shape (128, 128), took 1.00292 seconds to execute.
+execute_parallel_cannon, matricx shape (256, 256), took 2.80900 seconds to execute.
+execute_parallel_cannon, matricx shape (512, 512), took 26.35500 seconds to execute.
+execute_parallel_cannon, matricx shape (1024, 1024), took 142.21068 seconds to execute.
+execute_parallel_cannon, matricx shape (2048, 2048), took 1674.51305 seconds to execute.
+one_group, 0, took 1848.75417 seconds to execute.
