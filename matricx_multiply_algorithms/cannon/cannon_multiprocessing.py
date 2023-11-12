@@ -42,7 +42,7 @@ def execute_parallel_cannon(A, B):
     A11, A12, A13, A14, A21, A22, A23, A24, A31, A32, A33, A34, A41, A42, A43, A44 = split_matrix_4(A)
     B11, B12, B13, B14, B21, B22, B23, B24, B31, B32, B33, B34, B41, B42, B43, B44 = split_matrix_4(B)
 
-    # 递归计算16个子矩阵乘法
+    # generate tasks
     C11 = [(A11, B11), (A12, B21), (A13, B31), (A14, B41)]
     C12 = [(A11, B12), (A12, B22), (A13, B32), (A14, B42)]
     C13 = [(A11, B13), (A12, B23), (A13, B33), (A14, B43)]
@@ -65,7 +65,7 @@ def execute_parallel_cannon(A, B):
 
     tasks = C11 + C12 + C13 + C14 + C21 + C22 + C23 + C24 + C31 + C32 + C33 + C34 + C41 + C42 + C43 + C44
 
-    with Pool(processes = 6) as pool:
+    with Pool(processes = cpu_count()) as pool:
         results = pool.starmap(parallel_cannon, tasks)
 
     # Combine to form the sub-matrices of C
