@@ -1,0 +1,267 @@
+10 Different Groups
+execute_fox, matricx shape (16, 16), took 0.00199 seconds to execute.
+execute_fox, matricx shape (32, 32), took 0.02693 seconds to execute.
+execute_fox, matricx shape (64, 64), took 0.15861 seconds to execute.
+execute_fox, matricx shape (256, 256), took 8.83652 seconds to execute.
+execute_fox, matricx shape (512, 512), took 112.33867 seconds to execute.
+execute_fox, matricx shape (1024, 1024), took 582.44073 seconds to execute.
+execute_fox, matricx shape (2048, 2048), took 7359.85928 seconds to execute.
+one_group, 0, took 8065.34261 seconds to execute.
+execute_fox_multiprocessing, matricx shape (16, 16), took 4.68145 seconds to execute.
+execute_fox_multiprocessing, matricx shape (32, 32), took 1.94679 seconds to execute.
+execute_fox_multiprocessing, matricx shape (64, 64), took 2.00663 seconds to execute.
+execute_fox_multiprocessing, matricx shape (128, 128), took 2.47737 seconds to execute.
+execute_fox_multiprocessing, matricx shape (256, 256), took 4.19477 seconds to execute.
+execute_fox_multiprocessing, matricx shape (512, 512), took 28.68936 seconds to execute.
+execute_fox_multiprocessing, matricx shape (1024, 1024), took 142.76173 seconds to execute.
+execute_fox_multiprocessing, matricx shape (2048, 2048), took 1815.50031 seconds to execute.
+one_group, 0, took 2002.26536 seconds to execute.
+
+execute_fox, matricx shape (16, 16), took 0.00299 seconds to execute.
+execute_fox, matricx shape (32, 32), took 0.02693 seconds to execute.
+execute_fox, matricx shape (64, 64), took 0.14358 seconds to execute.
+execute_fox, matricx shape (128, 128), took 1.71754 seconds to execute.
+execute_fox, matricx shape (256, 256), took 8.49530 seconds to execute.
+execute_fox, matricx shape (512, 512), took 114.08771 seconds to execute.
+execute_fox, matricx shape (1024, 1024), took 589.79351 seconds to execute.
+execute_fox, matricx shape (2048, 2048), took 8488.01997 seconds to execute.
+one_group, 1, took 9202.29499 seconds to execute.
+execute_fox_multiprocessing, matricx shape (16, 16), took 5.79851 seconds to execute.
+execute_fox_multiprocessing, matricx shape (32, 32), took 2.63795 seconds to execute.
+execute_fox_multiprocessing, matricx shape (64, 64), took 2.70577 seconds to execute.
+execute_fox_multiprocessing, matricx shape (128, 128), took 3.41488 seconds to execute.
+execute_fox_multiprocessing, matricx shape (256, 256), took 5.72670 seconds to execute.
+execute_fox_multiprocessing, matricx shape (512, 512), took 35.02345 seconds to execute.
+execute_fox_multiprocessing, matricx shape (1024, 1024), took 191.78071 seconds to execute.
+execute_fox_multiprocessing, matricx shape (2048, 2048), took 2468.92100 seconds to execute.
+one_group, 1, took 2716.01496 seconds to execute.
+
+execute_fox, matricx shape (16, 16), took 0.00200 seconds to execute.
+execute_fox, matricx shape (32, 32), took 0.02896 seconds to execute.
+execute_fox, matricx shape (64, 64), took 0.14262 seconds to execute.
+execute_fox, matricx shape (128, 128), took 1.86904 seconds to execute.
+execute_fox, matricx shape (256, 256), took 10.19763 seconds to execute.
+execute_fox, matricx shape (512, 512), took 135.30847 seconds to execute.
+execute_fox, matricx shape (1024, 1024), took 599.86472 seconds to execute.
+execute_fox, matricx shape (2048, 2048), took 7720.01202 seconds to execute.
+one_group, 2, took 8467.43169 seconds to execute.
+execute_fox_multiprocessing, matricx shape (16, 16), took 4.52487 seconds to execute.
+execute_fox_multiprocessing, matricx shape (32, 32), took 4.68445 seconds to execute.
+execute_fox_multiprocessing, matricx shape (64, 64), took 2.05150 seconds to execute.
+execute_fox_multiprocessing, matricx shape (128, 128), took 2.28687 seconds to execute.
+execute_fox_multiprocessing, matricx shape (256, 256), took 4.04602 seconds to execute.
+execute_fox_multiprocessing, matricx shape (512, 512), took 27.53586 seconds to execute.
+execute_fox_multiprocessing, matricx shape (1024, 1024), took 140.17186 seconds to execute.
+execute_fox_multiprocessing, matricx shape (2048, 2048), took 1772.74055 seconds to execute.
+one_group, 2, took 1958.04797 seconds to execute.
+
+execute_fox, matricx shape (16, 16), took 0.00200 seconds to execute.
+execute_fox, matricx shape (32, 32), took 0.02896 seconds to execute.
+execute_fox, matricx shape (64, 64), took 0.15458 seconds to execute.
+execute_fox, matricx shape (128, 128), took 2.13126 seconds to execute.
+execute_fox, matricx shape (256, 256), took 9.89552 seconds to execute.
+execute_fox, matricx shape (512, 512), took 123.70881 seconds to execute.
+execute_fox, matricx shape (1024, 1024), took 582.48833 seconds to execute.
+execute_fox, matricx shape (2048, 2048), took 7263.63198 seconds to execute.
+one_group, 3, took 7982.04722 seconds to execute.
+execute_fox_multiprocessing, matricx shape (16, 16), took 4.79339 seconds to execute.
+execute_fox_multiprocessing, matricx shape (32, 32), took 2.02458 seconds to execute.
+execute_fox_multiprocessing, matricx shape (64, 64), took 2.42152 seconds to execute.
+execute_fox_multiprocessing, matricx shape (128, 128), took 2.55416 seconds to execute.
+execute_fox_multiprocessing, matricx shape (256, 256), took 4.15132 seconds to execute.
+execute_fox_multiprocessing, matricx shape (512, 512), took 27.61713 seconds to execute.
+execute_fox_multiprocessing, matricx shape (1024, 1024), took 141.98680 seconds to execute.
+execute_fox_multiprocessing, matricx shape (2048, 2048), took 1778.20041 seconds to execute.
+one_group, 3, took 1963.75627 seconds to execute.
+
+execute_fox, matricx shape (16, 16), took 0.00199 seconds to execute.
+execute_fox, matricx shape (32, 32), took 0.02896 seconds to execute.
+execute_fox, matricx shape (64, 64), took 0.14259 seconds to execute.
+execute_fox, matricx shape (128, 128), took 1.77828 seconds to execute.
+execute_fox, matricx shape (256, 256), took 8.77651 seconds to execute.
+execute_fox, matricx shape (512, 512), took 107.97974 seconds to execute.
+execute_fox, matricx shape (1024, 1024), took 573.50258 seconds to execute.
+execute_fox, matricx shape (2048, 2048), took 7215.18202 seconds to execute.
+one_group, 4, took 7907.39900 seconds to execute.
+execute_fox_multiprocessing, matricx shape (16, 16), took 4.26161 seconds to execute.
+execute_fox_multiprocessing, matricx shape (32, 32), took 4.64957 seconds to execute.
+execute_fox_multiprocessing, matricx shape (64, 64), took 4.91885 seconds to execute.
+execute_fox_multiprocessing, matricx shape (128, 128), took 2.48934 seconds to execute.
+execute_fox_multiprocessing, matricx shape (256, 256), took 4.23368 seconds to execute.
+execute_fox_multiprocessing, matricx shape (512, 512), took 27.40218 seconds to execute.
+execute_fox_multiprocessing, matricx shape (1024, 1024), took 137.43218 seconds to execute.
+execute_fox_multiprocessing, matricx shape (2048, 2048), took 2107.31647 seconds to execute.
+one_group, 4, took 2292.70888 seconds to execute.
+
+execute_fox, matricx shape (16, 16), took 0.00199 seconds to execute.
+execute_fox, matricx shape (32, 32), took 0.03088 seconds to execute.
+execute_fox, matricx shape (64, 64), took 0.16041 seconds to execute.
+execute_fox, matricx shape (128, 128), took 1.74885 seconds to execute.
+execute_fox, matricx shape (256, 256), took 9.15351 seconds to execute.
+execute_fox, matricx shape (512, 512), took 113.44360 seconds to execute.
+execute_fox, matricx shape (1024, 1024), took 581.88359 seconds to execute.
+execute_fox, matricx shape (2048, 2048), took 7176.44519 seconds to execute.
+one_group, 5, took 7882.87301 seconds to execute.
+execute_fox_multiprocessing, matricx shape (16, 16), took 4.49590 seconds to execute.
+execute_fox_multiprocessing, matricx shape (32, 32), took 2.38061 seconds to execute.
+execute_fox_multiprocessing, matricx shape (64, 64), took 3.90053 seconds to execute.
+execute_fox_multiprocessing, matricx shape (128, 128), took 2.32675 seconds to execute.
+execute_fox_multiprocessing, matricx shape (256, 256), took 4.06912 seconds to execute.
+execute_fox_multiprocessing, matricx shape (512, 512), took 26.97362 seconds to execute.
+execute_fox_multiprocessing, matricx shape (1024, 1024), took 135.81068 seconds to execute.
+execute_fox_multiprocessing, matricx shape (2048, 2048), took 1747.16547 seconds to execute.
+one_group, 5, took 1927.13060 seconds to execute.
+
+execute_fox, matricx shape (16, 16), took 0.00199 seconds to execute.
+execute_fox, matricx shape (32, 32), took 0.02896 seconds to execute.
+execute_fox, matricx shape (64, 64), took 0.14461 seconds to execute.
+execute_fox, matricx shape (128, 128), took 1.69941 seconds to execute.
+execute_fox, matricx shape (256, 256), took 9.46264 seconds to execute.
+execute_fox, matricx shape (512, 512), took 107.10607 seconds to execute.
+execute_fox, matricx shape (1024, 1024), took 564.44419 seconds to execute.
+execute_fox, matricx shape (2048, 2048), took 7184.79995 seconds to execute.
+one_group, 6, took 7867.69321 seconds to execute.
+execute_fox_multiprocessing, matricx shape (16, 16), took 4.20666 seconds to execute.
+execute_fox_multiprocessing, matricx shape (32, 32), took 1.83010 seconds to execute.
+execute_fox_multiprocessing, matricx shape (64, 64), took 2.29686 seconds to execute.
+execute_fox_multiprocessing, matricx shape (128, 128), took 2.37564 seconds to execute.
+execute_fox_multiprocessing, matricx shape (256, 256), took 3.98502 seconds to execute.
+execute_fox_multiprocessing, matricx shape (512, 512), took 27.34728 seconds to execute.
+execute_fox_multiprocessing, matricx shape (1024, 1024), took 137.48167 seconds to execute.
+execute_fox_multiprocessing, matricx shape (2048, 2048), took 1789.86523 seconds to execute.
+one_group, 6, took 1969.39634 seconds to execute.
+
+execute_fox, matricx shape (16, 16), took 0.00199 seconds to execute.
+execute_fox, matricx shape (32, 32), took 0.02693 seconds to execute.
+execute_fox, matricx shape (64, 64), took 0.14162 seconds to execute.
+execute_fox, matricx shape (128, 128), took 1.70643 seconds to execute.
+execute_fox, matricx shape (256, 256), took 8.93114 seconds to execute.
+execute_fox, matricx shape (512, 512), took 111.22240 seconds to execute.
+execute_fox, matricx shape (1024, 1024), took 564.20411 seconds to execute.
+execute_fox, matricx shape (2048, 2048), took 7091.99747 seconds to execute.
+one_group, 7, took 7778.23822 seconds to execute.
+execute_fox_multiprocessing, matricx shape (16, 16), took 4.30448 seconds to execute.
+execute_fox_multiprocessing, matricx shape (32, 32), took 1.81215 seconds to execute.
+execute_fox_multiprocessing, matricx shape (64, 64), took 1.91886 seconds to execute.
+execute_fox_multiprocessing, matricx shape (128, 128), took 2.46441 seconds to execute.
+execute_fox_multiprocessing, matricx shape (256, 256), took 4.05336 seconds to execute.
+execute_fox_multiprocessing, matricx shape (512, 512), took 26.82625 seconds to execute.
+execute_fox_multiprocessing, matricx shape (1024, 1024), took 136.89167 seconds to execute.
+execute_fox_multiprocessing, matricx shape (2048, 2048), took 1757.94418 seconds to execute.
+one_group, 7, took 1936.22427 seconds to execute.
+
+execute_fox, matricx shape (16, 16), took 0.00299 seconds to execute.
+execute_fox, matricx shape (32, 32), took 0.02996 seconds to execute.
+execute_fox, matricx shape (64, 64), took 0.14262 seconds to execute.
+execute_fox, matricx shape (128, 128), took 1.65956 seconds to execute.
+execute_fox, matricx shape (256, 256), took 8.34877 seconds to execute.
+execute_fox, matricx shape (512, 512), took 108.05792 seconds to execute.
+execute_fox, matricx shape (1024, 1024), took 563.93445 seconds to execute.
+execute_fox, matricx shape (2048, 2048), took 7097.48780 seconds to execute.
+one_group, 8, took 7779.67108 seconds to execute.
+execute_fox_multiprocessing, matricx shape (16, 16), took 4.20173 seconds to execute.
+execute_fox_multiprocessing, matricx shape (32, 32), took 2.31879 seconds to execute.
+execute_fox_multiprocessing, matricx shape (64, 64), took 1.92884 seconds to execute.
+execute_fox_multiprocessing, matricx shape (128, 128), took 2.34971 seconds to execute.
+execute_fox_multiprocessing, matricx shape (256, 256), took 3.93546 seconds to execute.
+execute_fox_multiprocessing, matricx shape (512, 512), took 26.89703 seconds to execute.
+execute_fox_multiprocessing, matricx shape (1024, 1024), took 136.14453 seconds to execute.
+execute_fox_multiprocessing, matricx shape (2048, 2048), took 1849.54610 seconds to execute.
+one_group, 8, took 2027.32812 seconds to execute.
+
+execute_fox, matricx shape (16, 16), took 0.00317 seconds to execute.
+execute_fox, matricx shape (32, 32), took 0.03352 seconds to execute.
+execute_fox, matricx shape (64, 64), took 0.14644 seconds to execute.
+execute_fox, matricx shape (128, 128), took 1.71802 seconds to execute.
+execute_fox, matricx shape (256, 256), took 9.41782 seconds to execute.
+execute_fox, matricx shape (512, 512), took 114.25327 seconds to execute.
+execute_fox, matricx shape (1024, 1024), took 580.70145 seconds to execute.
+execute_fox, matricx shape (2048, 2048), took 7220.77439 seconds to execute.
+one_group, 9, took 7927.05524 seconds to execute.
+execute_fox_multiprocessing, matricx shape (16, 16), took 4.68227 seconds to execute.
+execute_fox_multiprocessing, matricx shape (32, 32), took 2.37763 seconds to execute.
+execute_fox_multiprocessing, matricx shape (64, 64), took 2.05051 seconds to execute.
+execute_fox_multiprocessing, matricx shape (128, 128), took 2.51527 seconds to execute.
+execute_fox_multiprocessing, matricx shape (256, 256), took 4.25476 seconds to execute.
+execute_fox_multiprocessing, matricx shape (512, 512), took 27.53639 seconds to execute.
+execute_fox_multiprocessing, matricx shape (1024, 1024), took 138.77153 seconds to execute.
+execute_fox_multiprocessing, matricx shape (2048, 2048), took 1821.84546 seconds to execute.
+one_group, 9, took 2004.03775 seconds to execute.
+
+
+execute_fox_multiprocessing
+7
+execute_fox_multiprocessing, matricx shape (16, 16), took 0.92985 seconds to execute.
+execute_fox_multiprocessing, matricx shape (32, 32), took 1.82313 seconds to execute.
+execute_fox_multiprocessing, matricx shape (64, 64), took 1.47905 seconds to execute.
+execute_fox_multiprocessing, matricx shape (128, 128), took 1.74932 seconds to execute.
+execute_fox_multiprocessing, matricx shape (256, 256), took 3.17539 seconds to execute.
+execute_fox_multiprocessing, matricx shape (512, 512), took 26.76246 seconds to execute.
+execute_fox_multiprocessing, matricx shape (1024, 1024), took 148.55124 seconds to execute.
+execute_fox_multiprocessing, matricx shape (2048, 2048), took 1832.30397 seconds to execute.
+one_group, 0, took 2016.77937 seconds to execute.
+6
+execute_fox_multiprocessing, matricx shape (16, 16), took 2.44177 seconds to execute.
+execute_fox_multiprocessing, matricx shape (32, 32), took 0.96738 seconds to execute.
+execute_fox_multiprocessing, matricx shape (64, 64), took 0.99434 seconds to execute.
+execute_fox_multiprocessing, matricx shape (128, 128), took 1.49899 seconds to execute.
+execute_fox_multiprocessing, matricx shape (256, 256), took 3.24536 seconds to execute.
+execute_fox_multiprocessing, matricx shape (512, 512), took 30.37714 seconds to execute.
+execute_fox_multiprocessing, matricx shape (1024, 1024), took 153.51084 seconds to execute.
+execute_fox_multiprocessing, matricx shape (2048, 2048), took 2050.37408 seconds to execute.
+one_group, 0, took 2243.41291 seconds to execute.
+5
+execute_fox_multiprocessing, matricx shape (16, 16), took 2.79153 seconds to execute.
+execute_fox_multiprocessing, matricx shape (32, 32), took 1.04819 seconds to execute.
+execute_fox_multiprocessing, matricx shape (64, 64), took 1.09905 seconds to execute.
+execute_fox_multiprocessing, matricx shape (128, 128), took 1.67156 seconds to execute.
+execute_fox_multiprocessing, matricx shape (256, 256), took 4.10688 seconds to execute.
+execute_fox_multiprocessing, matricx shape (512, 512), took 38.66018 seconds to execute.
+execute_fox_multiprocessing, matricx shape (1024, 1024), took 197.00516 seconds to execute.
+execute_fox_multiprocessing, matricx shape (2048, 2048), took 2500.54838 seconds to execute.
+one_group, 0, took 2746.93579 seconds to execute.
+4
+execute_fox_multiprocessing, matricx shape (16, 16), took 2.23109 seconds to execute.
+execute_fox_multiprocessing, matricx shape (32, 32), took 0.77566 seconds to execute.
+execute_fox_multiprocessing, matricx shape (64, 64), took 0.92852 seconds to execute.
+execute_fox_multiprocessing, matricx shape (128, 128), took 1.31748 seconds to execute.
+execute_fox_multiprocessing, matricx shape (256, 256), took 3.39654 seconds to execute.
+execute_fox_multiprocessing, matricx shape (512, 512), took 33.94231 seconds to execute.
+execute_fox_multiprocessing, matricx shape (1024, 1024), took 176.07852 seconds to execute.
+execute_fox_multiprocessing, matricx shape (2048, 2048), took 2382.39676 seconds to execute.
+one_group, 0, took 2601.07279 seconds to execute.
+3
+execute_fox_multiprocessing, matricx shape (16, 16), took 2.48593 seconds to execute.
+execute_fox_multiprocessing, matricx shape (32, 32), took 0.92489 seconds to execute.
+execute_fox_multiprocessing, matricx shape (64, 64), took 0.95360 seconds to execute.
+execute_fox_multiprocessing, matricx shape (128, 128), took 1.72190 seconds to execute.
+execute_fox_multiprocessing, matricx shape (256, 256), took 5.08842 seconds to execute.
+execute_fox_multiprocessing, matricx shape (512, 512), took 52.25439 seconds to execute.
+execute_fox_multiprocessing, matricx shape (1024, 1024), took 249.21200 seconds to execute.
+execute_fox_multiprocessing, matricx shape (2048, 2048), took 3084.07576 seconds to execute.
+one_group, 0, took 3396.72446 seconds to execute.
+2
+execute_fox_multiprocessing, matricx shape (16, 16), took 2.12935 seconds to execute.
+execute_fox_multiprocessing, matricx shape (32, 32), took 0.72797 seconds to execute.
+execute_fox_multiprocessing, matricx shape (64, 64), took 0.79625 seconds to execute.
+execute_fox_multiprocessing, matricx shape (128, 128), took 1.63720 seconds to execute.
+execute_fox_multiprocessing, matricx shape (256, 256), took 5.35026 seconds to execute.
+execute_fox_multiprocessing, matricx shape (512, 512), took 60.74267 seconds to execute.
+execute_fox_multiprocessing, matricx shape (1024, 1024), took 316.80127 seconds to execute.
+execute_fox_multiprocessing, matricx shape (2048, 2048), took 3863.13823 seconds to execute.
+one_group, 0, took 4251.33145 seconds to execute.
+1
+execute_fox_multiprocessing, matricx shape (16, 16), took 1.07014 seconds to execute.
+execute_fox_multiprocessing, matricx shape (32, 32), took 1.08246 seconds to execute.
+execute_fox_multiprocessing, matricx shape (64, 64), took 0.91750 seconds to execute.
+execute_fox_multiprocessing, matricx shape (128, 128), took 2.98211 seconds to execute.
+execute_fox_multiprocessing, matricx shape (256, 256), took 10.68868 seconds to execute.
+execute_fox_multiprocessing, matricx shape (512, 512), took 125.71714 seconds to execute.
+execute_fox_multiprocessing, matricx shape (1024, 1024), took 588.28257 seconds to execute.
+execute_fox_multiprocessing, matricx shape (2048, 2048), took 7204.47012 seconds to execute.
+one_group, 0, took 7935.21555 seconds to execute.
+finishs
+
+
+Plot Result
+[1.0, 1.8649268266023191, 2.33602241989023, 3.0240429474056203, 2.881156060655783, 3.5137344888792192, 3.9319186324745017]
