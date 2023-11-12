@@ -9,8 +9,7 @@
     @Description : if you want to run all tests, just run this file
 """
 from utils.matrix_operations import matrix_pair
-from tests import test_strassen
-from tests import test_coppersmith_winograd
+from tests import test_strassen, test_coppersmith_winograd, test_fox
 from utils.results_generate import save_to_file
 
 
@@ -20,6 +19,8 @@ def run_all(data=matrix_pair.data):
     test_strassen.total_groups_test(data)
     # run coppersmith_winograd
     test_coppersmith_winograd.total_groups_test_coppersmith_winograd(data)
+    # run fox
+    test_fox.total_groups_test(data)
     # run others....
 
 
