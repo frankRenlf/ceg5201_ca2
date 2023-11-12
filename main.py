@@ -34,9 +34,9 @@ def run2file():  # save result to file
 def switch():
     chosen = input("please choose the way to run the test:\n")
     if chosen == '1':
-        run2file()
-    elif chosen == '2':
         run2terminal()
+    elif chosen == '2':
+        run2file()
 
 
 if __name__ == "__main__":
