@@ -65,7 +65,7 @@ def execute_parallel_cannon(A, B):
 
     tasks = C11 + C12 + C13 + C14 + C21 + C22 + C23 + C24 + C31 + C32 + C33 + C34 + C41 + C42 + C43 + C44
 
-    with Pool(processes = cpu_count()) as pool:
+    with Pool(processes=cpu_count()) as pool:
         results = pool.starmap(parallel_cannon, tasks)
 
     # Combine to form the sub-matrices of C
@@ -79,6 +79,7 @@ def execute_parallel_cannon(A, B):
         C_sub.append(sum_matrix)
     C = combine_matrix(*C_sub)
     return C
+
 
 if __name__ == '__main__':
     # codes for test
